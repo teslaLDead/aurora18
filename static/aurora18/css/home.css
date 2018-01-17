@@ -1,0 +1,264 @@
+
+#mountainScene2{
+    position: fixed;
+    height: 900px;
+    width: 100%;
+    background: red;
+    opacity: 0;
+    transition: all 2s;
+}
+#manImage{
+    transform: scale(0.8);
+    position: absolute;
+    background-image: url("../img/manimage1mdpi.png");
+    background-repeat: no-repeat;
+    margin-left: -20px;
+    height: 1164.9px;
+    margin-top: -10%;
+    width: 100%;
+}
+#manShadow{
+    margin-left: -20px;
+    transform: scale(0.8);
+    position: absolute;
+    background-image: url("../img/manshadowmdpi.png");
+    background-repeat: no-repeat;
+
+    height: 1164.9px;
+    margin-top: -10%;
+    width: 100%;
+}
+#Scene3{
+    position: fixed;
+    height: 900px;
+    width: 100%;
+    background: #45294c;
+    opacity: 0;
+    transition: all 2s;
+}
+
+#solarsystem{
+    height: 900px;
+    margin-top: -100px;
+    width: 100%;
+    background-image: url("../img/solarsystem-01.png");
+    position: absolute;
+}
+#stars{
+
+    position: absolute;
+    height: 900px;
+    margin-top: -100px;
+    width: 100%;
+    background-image: url("../img/stars.png");
+}
+#spaceman{
+    margin-left: -15%;
+    transform: scale(0.7);
+    position: absolute;
+    height: 900px;
+    margin-top: -100px;
+    width: 100%;
+    background-image: url("../img/spaceman-01.png");
+    background-position: 10%;
+}
+#spacemanoutline{
+    margin-left: -15%;
+    transform: scale(0.7);
+    position: absolute;
+    height: 900px;
+    margin-top: -100px;
+    width: 100%;
+    background-image: url("../img/spacemanshadowmdpi.png");
+    background-position: 10%;
+}
+#text >p{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    font-size: 1.2em;
+    padding: 0.3em;
+    font-family: "Raleway Medium";
+    color: white;
+    background: black;
+    transition: all 2s;
+    opacity: 0;
+}
+
+#text>p:nth-child(1){
+    top:200px;
+
+
+}
+#text>p:nth-child(2){
+    top:250px;
+
+}
+#text>p:nth-child(3){
+    top:300px;
+
+}
+#text>p:nth-child(4){
+    top:350px;
+}
+#text>p:nth-child(5){
+    top:400px;
+}
+#text > p:nth-child(6){
+    top:450px;
+}
+#text > p:nth-child(7){
+    top:500px;
+}
+
+#textLast >p{
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    font-size: 1.2em;
+    padding: 0.3em;
+    font-family: "Raleway Medium";
+    color: white;
+    background: #00000094;
+    transition: all 2s;
+    opacity: 0;
+}
+
+#textLast>p:nth-child(1){
+    top:200px;
+
+
+}
+#textLast>p:nth-child(2){
+    top:250px;
+
+}
+#textLast>p:nth-child(3){
+    top:300px;
+
+}
+#textLast>p:nth-child(4){
+    top:350px;
+}
+#textLast>p:nth-child(5){
+    top:400px;
+}
+#textLast > p:nth-child(6){
+    top:450px;
+}
+#textLast > p:nth-child(7){
+    top:500px;
+}
+#maintitle{
+    position: fixed;
+    font-family: 'Lobster', cursive;
+    width: 100%;
+    top: 530px;
+    font-size: 7em;
+    color: #292929;
+    text-align: center;
+    opacity:0 ;
+
+}
+#logo{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    left: -100px;
+    background-image: url("../img/aruroa 18 banner.png");
+    z-index: 99;
+    top:20px;
+    transition: all 0.5s;
+}
+body{
+    overflow:hidden;
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+#river{
+    position: absolute;
+    background-image: url("../img/river.png");
+    height: 1164.9px;
+    margin-top: -240px;
+    width: 100%;
+    opacity: 0.65;
+
+}
+#background{
+    position: absolute;
+    background-image: url("../img/background_Artboard 1.png");
+    height: 1164.9px;
+    margin-top: -5px;
+    width: 100%;
+
+}
+#mountain0{
+    margin-top: 500px;
+    position: absolute;
+    background-image: url("../img/Asset 10mdpi.png");
+    background-repeat: no-repeat;
+    height: 1164.9px;
+
+    width: 100%;
+}
+#mountain1{
+    margin-top: 447px;
+    position: absolute;
+    background-image: url("../img/Asset 9mdpi.png");
+    background-repeat: no-repeat;
+    height: 1164.9px;
+
+    width: 100%;
+}
+#mountain2{
+    margin-left: -15px;
+    margin-top: 379px;
+    position: fixed;
+    background-image: url("../img/Asset 8mdpi.png");
+    background-repeat: no-repeat;
+    height: 1164.9px;
+
+    width: 100%;
+}
+#mountain3{
+
+    margin-top: 5px;
+    position: fixed;
+    background-image: url("../img/Asset 7mdpi.png");
+    background-repeat: no-repeat;
+    ;
+    height: 1164.9px;
+    background-position: center;
+    width: 100%;
+}
+#mountainScene1{
+    transition: 1s;
+}

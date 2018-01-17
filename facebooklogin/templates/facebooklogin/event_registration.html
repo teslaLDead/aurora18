@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+<h1>{{ name }}</h1>
+<h1>{{ eventName }}</h1>
+<h1>{{ message }}</h1>
+
+{% if formsize is not 0 %}
+<h1>enter members</h1>
+    <form id="teamform" method="GET" action="Update">
+        <script>
+
+            var i;
+            for( i=0;i<{{ formsize }};i++) {
+                $('#teamform').append(
+            "<label>Member Name</label><br><input type='text' name='member"+(i+1)+"'><br><label>Member Email ID</label><br><input type='email' name='email"+(i+1)+"' value='Enter email'><br>"
+        );
+            };
+    </script>
+    <input type="submit" value="Submit">
+    </form>
+{% else %}
+<h1>No team members are required </h1>
+    <p>This event will be added to your profile. To complete registration pay online.</p>
+    <a href="Update">Proceed Registration</a>
+{% endif %}
+
+{% if paidStatus is False and addedStatus is True %}
+    <a href="">Pay mf</a>
+{% endif %}
+</body>
+</html>

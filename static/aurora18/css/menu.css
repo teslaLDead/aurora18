@@ -1,0 +1,59 @@
+
+        body{
+            height: 3000px;
+        }
+        #mainBack{
+            height: 100%;
+            position: fixed;
+            background: black;
+            display: flex;
+
+            transition: all 0.5s;
+        }
+        .container-div{
+            height:100%;
+
+            position: relative;
+            width: 100%;
+            background: red;
+            transition: all 0.5s;
+        }
+        #technical,#cultural,#managerial{
+
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+       @media screen and (min-width: 800px) {
+	    #technical {
+		background-image: url("../img/rocketart-low.png");
+	    }
+           #cultural{
+               background-image: url("../img/cultural-low.png");
+           }
+           #managerial{
+               background-image: url("../img/managerial-low.png");
+           }
+        }
+        @media screen and (min-width: 1440px) {
+	    #technical {
+		background-image: url("../img/rocketart-med.png");
+	    }
+            #cultural{
+               background-image: url("../img/cultural-med.png");
+           }
+            #managerial{
+                background-image: url("../img/managerial-med.png");
+            }
+        }
+        @media screen and (min-width: 1980px) {
+	    #technical {
+		background-image: url("../img/rocketart.png");
+	    }
+            #cultural{
+               background-image: url("../img/cultural-high.png");
+           }
+            #managerial{
+               background-image: url("../img/managerial.png");
+           }
+        }

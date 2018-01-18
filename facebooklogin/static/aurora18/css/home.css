@@ -262,7 +262,7 @@ body{
     margin-top: 5px;
     position: fixed;
     background-image: url("../img/Asset 7mdpi.png");
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     ;
     height: 1164.9px;
     background-position: center;

@@ -54,6 +54,7 @@ var PageTransitions = (function() {
         }
 
             });
+
 		$('#nextIterrateEffect').on('click',function(){
 			if(isAnimating){
 				return false;

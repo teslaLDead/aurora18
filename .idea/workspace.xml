@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/aurora18/css/home.css" afterPath="$PROJECT_DIR$/static/aurora18/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,34 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="89" />
-              <folding>
-                <element signature="n#if#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="90" lean-forward="true" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="managerialEvents.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
               <caret line="1106" column="73" lean-forward="false" selection-start-line="1106" selection-start-column="73" selection-end-line="1106" selection-end-column="73" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <element signature="n#if#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,18 +63,28 @@
       <file leaf-file-name="techEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="1269" column="72" lean-forward="false" selection-start-line="1269" selection-start-column="72" selection-end-line="1269" selection-end-column="72" />
+            <state relative-caret-position="243">
+              <caret line="1241" column="0" lean-forward="true" selection-start-line="1241" selection-start-column="0" selection-end-line="1241" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
+            <state relative-caret-position="77">
+              <caret line="254" column="33" lean-forward="true" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagetransitions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -156,6 +158,7 @@
       <find>mountain</find>
       <find>13.126</find>
       <find>window</find>
+      <find>mounta</find>
       <find>repl</find>
     </findStrings>
     <replaceStrings>
@@ -174,7 +177,6 @@
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/js/menu.js" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/menu.css" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/animations.css" />
-        <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" />
         <option value="$PROJECT_DIR$/facebooklogin/forms.py" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/registration/login.html" />
@@ -184,7 +186,6 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventMenu.html" />
@@ -193,8 +194,10 @@
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/home.css" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
         <option value="$PROJECT_DIR$/static/aurora18/css/home.css" />
+        <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
       </list>
     </option>
   </component>
@@ -247,7 +250,20 @@
               <item name="production" type="b2602c69:ProjectViewProjectNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="production" type="b2602c69:ProjectViewProjectNode" />
@@ -264,13 +280,6 @@
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="aurora18" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="production" type="b2602c69:ProjectViewProjectNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -359,7 +368,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08933333" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666666" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -580,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="1117" column="34" lean-forward="false" selection-start-line="1117" selection-start-column="34" selection-end-line="1117" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -723,16 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="89" />
-          <folding>
-            <element signature="n#if#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -789,19 +781,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
+    <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="1269" column="72" lean-forward="false" selection-start-line="1269" selection-start-column="72" selection-end-line="1269" selection-end-column="72" />
+        <state relative-caret-position="77">
+          <caret line="254" column="33" lean-forward="true" selection-start-line="254" selection-start-column="33" selection-end-line="254" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
+    <entry file="file://$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
+        <state relative-caret-position="349">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="1241" column="0" lean-forward="true" selection-start-line="1241" selection-start-column="0" selection-end-line="1241" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="n#if#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

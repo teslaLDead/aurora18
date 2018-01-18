@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="culturalEvent.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="culturalEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
@@ -117,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="imageGallery.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="imageGallery.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -156,8 +152,8 @@
       <find>galler</find>
       <find>gall</find>
       <find>gallery</find>
-      <find>local</find>
       <find>localhost</find>
+      <find>local</find>
     </findStrings>
     <replaceStrings>
       <replace>gall</replace>
@@ -184,7 +180,6 @@
         <option value="$PROJECT_DIR$/facebooklogin/urls.py" />
         <option value="$PROJECT_DIR$/facebooklogin/views.py" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/image_gallery.css" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" />
@@ -195,6 +190,7 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
       </list>
     </option>
   </component>
@@ -271,6 +267,27 @@
               <item name="production" type="b2602c69:ProjectViewProjectNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="gall" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -732,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -797,6 +806,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="1930" column="53" lean-forward="false" selection-start-line="1930" selection-start-column="53" selection-end-line="1930" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
           <folding />
         </state>
       </provider>

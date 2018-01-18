@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Aurora Gallery</title>
@@ -15,16 +15,16 @@
 
 		<div id="tf_loading" class="tf_loading"></div>
 		<div id="tf_bg" class="tf_bg">
-			<img src="/static/aurora18/img/gall/1.jpg" alt="Image 1" />
-			<img src="/static/aurora18/img/gall/2.jpg" alt="Image 2"/>
-			<img src="/static/aurora18/img/gall/3.jpg" alt="Image 3" />
-			<img src="/static/aurora18/img/gall/4.jpg" alt="Image 4" />
-			<img src="/static/aurora18/img/gall/5.jpg" alt="Image 6" />
-            <img src="/static/aurora18/img/gall/6.jpg" alt="Image 6" />
-			<img src="/static/aurora18/img/gall/7.jpg" alt="Image 6" />
-            <img src="/static/aurora18/img/gall/8.jpg" alt="Image 6" />
+			<img src="{% static 'aurora18/img/gall/1.JPG' %}" alt="Image 1" />
+			<img src="{% static 'aurora18/img/gall/2.JPG' %}" alt="Image 2"/>
+			<img src="{% static 'aurora18/img/gall/3.JPG' %}" alt="Image 3" />
+			<img src="{% static 'aurora18/img/gall/4.JPG' %}" alt="Image 4" />
+			<img src="{% static 'aurora18/img/gall/5.JPG' %}" alt="Image 6" />
+            <img src="{% static 'aurora18/img/gall/6.JPG' %}" alt="Image 6" />
+			<img src="{% static 'aurora18/img/gall/7.JPG' %}" alt="Image 6" />
+            <img src="{% static 'aurora18/img/gall/8.JPG' %}" alt="Image 6" />
 
-            <img src="/static/aurora18/img/gall/10.jpg" alt="Image 6" />
+            <img src="{% static 'aurora18/img/gall/9.JPG' %}" alt="Image 6" />
 
 			<div class="tf_pattern"></div>
 		</div>

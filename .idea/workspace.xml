@@ -2,51 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/gall/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/gall/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/gall/pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery-mousewheel-3.0.4/ChangeLog.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery-mousewheel-3.0.4/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery-mousewheel-3.0.4/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery-mousewheel-3.0.4/jquery.mousewheel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery-mousewheel-3.0.4/jquery.mousewheel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/jquery.flip.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/1.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/1.JPG.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/2.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/3.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/4.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/6.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/7.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/car/8.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventCategory.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/background_Artboard 1.png" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/img/background_Artboard 1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/forms.py" afterPath="$PROJECT_DIR$/facebooklogin/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/animations.css" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/animations.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/home.css" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/image_gallery.css" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/image_gallery.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/menu.css" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/style.css" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/function.js" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/menu.js" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" afterPath="$PROJECT_DIR$/facebooklogin/static/aurora18/js/pagetransitions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventMenu.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventMenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/registration/login.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/registration/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/urls.py" afterPath="$PROJECT_DIR$/facebooklogin/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/views.py" afterPath="$PROJECT_DIR$/facebooklogin/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/settings.py" afterPath="$PROJECT_DIR$/mysite/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,6 +20,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="culturalEvent.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="1930" column="53" lean-forward="false" selection-start-line="1930" selection-start-column="53" selection-end-line="1930" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="413">
-              <caret line="603" column="124" lean-forward="true" selection-start-line="603" selection-start-column="124" selection-end-line="603" selection-end-column="124" />
+              <caret line="603" column="124" lean-forward="false" selection-start-line="603" selection-start-column="124" selection-end-line="603" selection-end-column="124" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -99,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="65" />
+              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="65" />
               <folding>
                 <element signature="n#if#0;n#!!top" expanded="false" />
               </folding>
@@ -120,8 +90,8 @@
       <file leaf-file-name="techEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="560" column="47" lean-forward="false" selection-start-line="560" selection-start-column="47" selection-end-line="560" selection-end-column="47" />
+            <state relative-caret-position="273">
+              <caret line="1269" column="33" lean-forward="false" selection-start-line="1269" selection-start-column="33" selection-end-line="1269" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -130,8 +100,8 @@
       <file leaf-file-name="managerialEvents.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="562" column="47" lean-forward="false" selection-start-line="562" selection-start-column="47" selection-end-line="562" selection-end-column="47" />
+            <state relative-caret-position="273">
+              <caret line="1105" column="53" lean-forward="false" selection-start-line="1105" selection-start-column="53" selection-end-line="1105" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -141,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/show.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -151,20 +121,8 @@
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_registration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="567" column="47" lean-forward="false" selection-start-line="567" selection-start-column="47" selection-end-line="567" selection-end-column="47" />
-              <folding>
-                <element signature="n#if#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -198,6 +156,8 @@
       <find>galler</find>
       <find>gall</find>
       <find>gallery</find>
+      <find>local</find>
+      <find>localhost</find>
     </findStrings>
     <replaceStrings>
       <replace>gall</replace>
@@ -227,14 +187,14 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventMenu.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
       </list>
     </option>
   </component>
@@ -399,7 +359,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08933333" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.236" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.236" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -546,12 +506,12 @@
           <folding>
             <element signature="e#1833#1962#0" expanded="false" />
             <element signature="e#1990#2083#0" expanded="false" />
-            <element signature="e#2108#2201#0" expanded="false" />
-            <element signature="e#2226#2287#0" expanded="false" />
-            <element signature="e#2313#2367#0" expanded="false" />
-            <element signature="e#2393#2485#0" expanded="false" />
-            <element signature="e#2522#2586#0" expanded="false" />
-            <element signature="e#2608#2671#0" expanded="false" />
+            <element signature="e#2108#2163#0" expanded="false" />
+            <element signature="e#2188#2249#0" expanded="false" />
+            <element signature="e#2288#2352#0" expanded="false" />
+            <element signature="e#2409#2444#0" expanded="false" />
+            <element signature="e#2480#2515#0" expanded="false" />
+            <element signature="e#2551#2586#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="356" column="48" lean-forward="false" selection-start-line="356" selection-start-column="48" selection-end-line="356" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -783,15 +735,7 @@
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="562" column="47" lean-forward="false" selection-start-line="562" selection-start-column="47" selection-end-line="562" selection-end-column="47" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -799,7 +743,7 @@
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -812,18 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="560" column="47" lean-forward="false" selection-start-line="560" selection-start-column="47" selection-end-line="560" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="65" />
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="65" />
           <folding>
             <element signature="n#if#0;n#!!top" expanded="false" />
           </folding>
@@ -833,11 +769,35 @@
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
-          <caret line="603" column="124" lean-forward="true" selection-start-line="603" selection-start-column="124" selection-end-line="603" selection-end-column="124" />
+          <caret line="603" column="124" lean-forward="false" selection-start-line="603" selection-start-column="124" selection-end-line="603" selection-end-column="124" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="1269" column="33" lean-forward="false" selection-start-line="1269" selection-start-column="33" selection-end-line="1269" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="1105" column="53" lean-forward="false" selection-start-line="1105" selection-start-column="53" selection-end-line="1105" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="1930" column="53" lean-forward="false" selection-start-line="1930" selection-start-column="53" selection-end-line="1930" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>

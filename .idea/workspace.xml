@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/aurora18/css/home.css" afterPath="$PROJECT_DIR$/static/aurora18/css/home.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="techEvent.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="techEvent.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -80,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="232" column="31" lean-forward="false" selection-start-line="232" selection-start-column="31" selection-end-line="232" selection-end-column="31" />
+            <state relative-caret-position="286">
+              <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -158,6 +156,7 @@
       <find>mountain</find>
       <find>13.126</find>
       <find>window</find>
+      <find>repl</find>
     </findStrings>
     <replaceStrings>
       <replace>gall</replace>
@@ -190,12 +189,12 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/event_registration.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventMenu.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
-        <option value="$PROJECT_DIR$/static/aurora18/css/home.css" />
         <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/home.css" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
+        <option value="$PROJECT_DIR$/static/aurora18/css/home.css" />
       </list>
     </option>
   </component>
@@ -253,14 +252,25 @@
             <path>
               <item name="production" type="b2602c69:ProjectViewProjectNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="facebooklogin" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="production" type="b2602c69:ProjectViewProjectNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="production" type="b2602c69:ProjectViewProjectNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="aurora18" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -747,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="232" column="31" lean-forward="false" selection-start-line="232" selection-start-column="31" selection-end-line="232" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -791,6 +793,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="1269" column="72" lean-forward="false" selection-start-line="1269" selection-start-column="72" selection-end-line="1269" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/aurora18/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="265" column="31" lean-forward="false" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
           <folding />
         </state>
       </provider>

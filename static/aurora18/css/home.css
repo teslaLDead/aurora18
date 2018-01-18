@@ -230,7 +230,7 @@ body{
     margin-top: 500px;
     position: fixed;
     background-image: url("../img/Asset 10mdpi.png");
-    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
     background-position-x:left ;
     height: 1164.9px;
 

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Profile Aurora 18</title>
      <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
@@ -19,7 +21,7 @@
             height: 300px;
             width: 100%;
             position: fixed;
-            z-index: 0;
+            z-index: -100;
             bottom: -5px;
             background-position: bottom;
             background-repeat: no-repeat;
@@ -41,7 +43,7 @@
     <!-- NAV BAR BUTTON END-->
     <div id="mySidenav" class="sidenav">
 
-  <a href="about.html">
+  <a href="{% url 'about' %}">
       <span>
           <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -353,7 +355,7 @@
 
       </span><span>TEAM</span></a>
 
-  <a href="{% url 'login' %}">
+  <a href="{% url 'logout' %}">
       <span >
         <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -454,8 +456,9 @@
 </g>
 </svg>
 
-      </span><span>{% if user.is_authenticated %}LOGOUT{% endif %}</span></a>
-  <a href="#"><span >
+      </span>
+      <span>LOGOUT</span></a>
+  <a href="{% url 'gallery' %}" target="_blank"><span >
       <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -597,7 +600,8 @@
                     {% endfor %}
                 </ul>
                 <p>Your total event fees is {{ payble_amount }}</p>
-                <a href="#">See something wrong?</a>
+                <a href="mailto:">See something wrong?</a>
+                <p>Payment Gateway will be active soon. Till then please add events to your profile.<br/> You will be notified via email when payment gateway is acitve.</p>
                 <button onclick="show()">Edit Events</button>
             </div>
     </div>

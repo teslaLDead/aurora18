@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -5,18 +6,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Aurora 2018- Cultural Events</title>
+         <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
 		<meta name="description" content="Technical events in ABV-IIITM fest Aurora18" />
 		<meta name="keywords" content="abv-iiitm,fest,technical fest,events,gwalior college fest,college fest,aurora 18" />
 		<meta name="author" content="Paritosh Kumar" />
-		<link rel="shortcut icon" href="../favicon.ico">
-         <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
+		<link rel="shortcut icon" href="favicon.ico">
+          <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
          <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,700i,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/static/aurora18/css/component.css" />
 		<link rel="stylesheet" type="text/css" href="/static/aurora18/css/animations.css" />
 		<script src="/static/aurora18/js/modernizr.custom.js"></script>
-
+        <script src="https://use.fontawesome.com/d2e03493c3.js"></script>
 
 
 	</head>
@@ -32,8 +34,7 @@
 </div>
     <!-- NAV BAR BUTTON END-->
     <div id="mySidenav" class="sidenav">
-
-  <a href="about.html">
+<a href="{% url 'home'  %} ">
       <span >
           <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -41,53 +42,61 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g>
 	<g>
-		<path class="path1" d="M502,26.001H10c-5.523,0-10,4.477-10,10v280c0,5.523,4.477,10,10,10h46v139.998H38.967c-5.523,0-10,4.477-10,10
-			s4.477,10,10,10c0.006,0,0,0,0.006,0h434.053c0.007,0,0,0,0.007,0c5.523,0,10-4.477,10-10s-4.477-10-10-10H456V326.001h46
-			c5.523,0,10-4.477,10-10v-280C512,30.478,507.523,26.001,502,26.001z M376,354.001l-240,83.999V326.001h240V354.001z M116,401.858
-			l-30.857-30.857L116,340.144V401.858z M76,351.858v-25.857h25.857L76,351.858z M106.857,421L76,451.858v-61.715L106.857,421z
-			 M116,440.143v4.856l-7.471,2.615L116,440.143z M90.144,465.999l18.385-18.385l7.471-2.615v21H90.144z M136,465.999v-28
-			l240-83.999v111.998H136z M396,390.143L426.857,421L396,451.858V390.143z M436,465.999h-25.856L436,440.143V465.999z M436,401.858
-			l-30.857-30.857L436,340.144V401.858z M396,351.858v-4.857l7.473-2.615L396,351.858z M396,347.001v-21h25.857l-18.384,18.384
-			L396,347.001z M492,306.001H20v-260h472V306.001z"/>
+		<path d="M502,146.523H327.418l-61.422-35.939v-4.345h70c0.006-0.001,0.012-0.001,0.02,0c5.523,0,10-4.477,10-10
+			c0-2.343-0.806-4.498-2.156-6.202l-16.863-24.072l17.155-24.179c2.164-3.05,2.445-7.053,0.729-10.376
+			c-1.717-3.323-5.144-5.41-8.884-5.41h-80c-5.523,0-10,4.478-10,10v50.199v10.04v14.345l-61.418,35.939H10c-5.523,0-10,4.477-10,10
+			V476c0,5.522,4.477,10,10,10h492c5.523,0,10-4.478,10-10V156.523C512,151,507.523,146.523,502,146.523z M265.995,86.199V46h0.001
+			h50.643l-10.034,14.142c-2.446,3.447-2.46,8.062-0.034,11.523l10.209,14.574h-50.785V86.199z M20,166.523h130.399L90.95,201.311
+			c-3.066,1.794-4.95,5.079-4.95,8.631v35.181H20V166.523z M131.713,466H106V353.023c0-7.09,5.768-12.857,12.857-12.857
+			s12.856,5.768,12.856,12.857V466z M223.143,466h-25.714V353.023c0-7.09,5.768-12.857,12.857-12.857s12.857,5.768,12.857,12.857
+			V466z M314.571,466h-25.714V353.023c0-7.09,5.768-12.857,12.857-12.857s12.857,5.768,12.857,12.857V466z M406,466h-25.714V353.023
+			c0-7.09,5.768-12.857,12.857-12.857S406,345.934,406,353.023V466z M492,281.166h-31.035c-5.523,0-10,4.478-10,10
+			c0,5.522,4.477,10,10,10H492v131.5h-8.75c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H492V466h-66v-56.084h8.75
+			c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10H426v-36.893c0-18.118-14.74-32.857-32.857-32.857s-32.856,14.739-32.856,32.857
+			V466h-25.714V353.023c0-18.118-14.74-32.857-32.857-32.857c-18.118,0-32.857,14.739-32.857,32.857V466h-25.715V353.023
+			c0-18.118-14.74-32.857-32.857-32.857s-32.857,14.739-32.857,32.857V466h-25.715V353.023c0-18.118-14.739-32.857-32.856-32.857
+			C100.74,320.166,86,334.905,86,353.023v11.393h-8.75c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H86V466H20v-23.834h8.75
+			c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10H20v-121h31.035c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10H20v-16.044h76
+			c5.523,0,10-4.478,10-10v-39.446l149.996-87.771c0.002,0.001,0,0,0.002,0.001L406,215.676v39.446c0,5.523,4.477,10,10,10h76
+			V281.166z M492,245.122h-66v-35.181c0-3.552-1.884-6.837-4.95-8.631l-59.451-34.787H492V245.122z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path class="path2" d="M472,56H40c-5.523,0-10,4.477-10,10v220.001c0,5.523,4.477,10,10,10h289.744c0.004,0,0.008,0,0.012,0
-			c0.003,0,0.006,0,0.009,0H472c5.523,0,10-4.477,10-10V66C482,60.477,477.523,56,472,56z M462,276.001H352.09
-			c22.59-22.699,61.267-50.703,109.91-43.403V276.001z M462,212.399c-66.767-8.535-115.816,38.355-136.973,63.602H50V263.15
-			c51.854-3.886,85.155-37.606,114.737-67.574c27.943-28.308,54.336-55.046,92.794-55.046c11.053,0,17.137,2.871,20.294,5.28
-			c3.06,2.333,4.677,5.224,4.677,8.357c0,7.562-9.289,15.598-26.502,15.598c-30.528,0-46.501,17.908-46.501,35.598
-			c0,9.335,4.574,18.178,12.547,24.26c8.044,6.135,19.255,9.377,32.425,9.377c46.817,0,77.426-31.008,107.027-60.996
-			c29.287-29.669,57.071-57.793,100.502-61.563V212.399z M462,96.38c-51.853,3.886-85.154,37.606-114.736,67.574
-			C319.321,192.262,292.928,219,254.471,219c-11.053,0-17.137-2.871-20.295-5.28c-3.06-2.334-4.677-5.224-4.677-8.358
-			c0-7.561,9.288-15.598,26.501-15.598c30.529,0,46.502-17.908,46.502-35.598c0-9.335-4.573-18.177-12.547-24.26
-			c-8.043-6.135-19.255-9.377-32.424-9.377c-46.817,0-77.426,31.008-107.027,60.996C121.216,211.194,93.432,239.318,50,243.088V76
-			h412V96.38z"/>
+		<path d="M256,170.124c-19.794,0-35.896,16.104-35.896,35.896c0,19.793,16.103,35.897,35.896,35.897
+			c19.793,0,35.897-16.104,35.897-35.897C291.897,186.227,275.793,170.124,256,170.124z M256,221.917
+			c-8.765,0-15.896-7.131-15.896-15.897c0-8.766,7.131-15.896,15.896-15.896s15.897,7.131,15.897,15.896
+			C271.897,214.786,264.765,221.917,256,221.917z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path id="path3" d="M502,465.999h-0.236c-5.523,0-10,4.477-10,10s4.477,10,10,10H502c5.523,0,10-4.477,10-10
-			C512,470.476,507.523,465.999,502,465.999z"/>
+		<path d="M80.002,281.169h-0.236c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h0.236c5.523,0,10-4.478,10-10
+			C90.002,285.647,85.525,281.169,80.002,281.169z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path d="M10.236,465.999H10c-5.523,0-10,4.477-10,10s4.477,10,10,10h0.236c5.523,0,10-4.477,10-10
-			C20.236,470.476,15.759,465.999,10.236,465.999z"/>
+		<path d="M432.234,281.169h-0.236c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h0.236c5.523,0,10-4.478,10-10
+			C442.234,285.647,437.757,281.169,432.234,281.169z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path d="M160.002,96.001h-0.236c-5.523,0-10,4.477-10,10s4.477,10,10,10h0.236c5.523,0,10-4.477,10-10
-			S165.525,96.001,160.002,96.001z"/>
+		<path d="M170.297,221.917h-18.75c-5.523,0-10,4.477-10,10c0,5.522,4.477,10,10,10h18.75c5.523,0,10-4.478,10-10
+			C180.297,226.395,175.82,221.917,170.297,221.917z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path d="M131.036,96.001H80c-5.523,0-10,4.477-10,10s4.477,10,10,10h51.036c5.523,0,10-4.477,10-10S136.559,96.001,131.036,96.001
-			z"/>
+		<path d="M270.813,281.167h-29.625c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h29.625c5.523,0,10-4.478,10-10
+			C280.813,285.645,276.335,281.167,270.813,281.167z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M358.547,245.122h-18.75c-5.523,0-10,4.478-10,10c0,5.523,4.477,10,10,10h18.75c5.523,0,10-4.478,10-10
+			C368.547,249.6,364.07,245.122,358.547,245.122z"/>
 	</g>
 </g>
 <g>
@@ -121,10 +130,9 @@
 <g>
 </g>
 </svg>
-
       </span>
-      <span>ABOUT</span></a>
-  <a href="eventMenu.html">
+      <span>HOME</span></a>
+  <a href="{%  url 'event_menu' %} ">
       <span ><?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -240,7 +248,7 @@
 </svg>
 
       </span><span>EVENTS</span></a>
-  <a href="teampage.html">
+  <a href="{% url 'team' %}">
       <span>
         <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -344,108 +352,9 @@
 
 
       </span><span>TEAM</span></a>
-  <a href="#"><span >
-        <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M159.738,133.697c-23.207,0-42.088,18.88-42.088,42.087c0,23.207,18.881,42.087,42.088,42.087
-			c23.206,0,42.086-18.88,42.086-42.087C201.824,152.577,182.944,133.697,159.738,133.697z M159.738,197.871
-			c-12.179,0-22.088-9.908-22.088-22.087s9.909-22.087,22.088-22.087c12.178,0,22.086,9.908,22.086,22.087
-			S171.916,197.871,159.738,197.871z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M352.26,133.697c-23.206,0-42.086,18.88-42.086,42.087c0,23.207,18.88,42.087,42.086,42.087
-			c23.208,0,42.088-18.88,42.088-42.087S375.467,133.697,352.26,133.697z M352.26,197.871c-12.178,0-22.086-9.908-22.086-22.087
-			s9.908-22.087,22.086-22.087c12.179,0,22.088,9.908,22.088,22.087C374.348,187.962,364.439,197.871,352.26,197.871z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M485.999,31.393V10c0-5.522-4.477-10-10-10h-440c-5.523,0-10,4.478-10,10v21.393c0,15.982,12.01,29.205,27.479,31.138
-			v209.495c0,0.011,0,0.021,0,0.031v16.981c-15.468,1.933-27.479,15.155-27.479,31.139v21.391c0,5.523,4.477,10,10,10H46v23.416
-			h-9.998c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H46v23h-9.998c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H46V492
-			h-7.033c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10c0.007,0,434.06,0,434.066,0c5.523,0,10-4.478,10-10
-			c0-5.522-4.477-10-10-10H466v-54.016h9.999c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10H466v-23h9.999c5.523,0,10-4.478,10-10
-			c0-5.522-4.477-10-10-10H466v-23.416h9.999c5.523,0,10-4.477,10-10v-21.391c0-15.983-12.01-29.206-27.477-31.139V62.531
-			C473.989,60.598,485.999,47.376,485.999,31.393z M446,492H66v-54.016h380V492z M446,417.984H66v-23h380V417.984z M446,374.984H66
-			v-23.415h380V374.984z M465.999,320.178v11.391h-420v-11.391c0-6.281,5.11-11.392,11.392-11.392h397.217
-			C460.889,308.786,465.999,313.896,465.999,320.178z M98.91,236.611c-3.905-3.906-10.237-3.905-14.142-0.001l-11.29,11.289V62.785
-			h90.75l-20.821,20.821c-3.905,3.905-3.905,10.237,0.001,14.143c1.953,1.952,4.512,2.929,7.071,2.929s5.119-0.977,7.071-2.929
-			l34.963-34.964H246v226h-44.176v-11.392c0-17.309-14.082-31.391-31.391-31.391h-21.391c-17.31,0-31.393,14.082-31.393,31.391
-			v11.392H73.478v-12.602l25.431-25.43C102.815,246.849,102.815,240.517,98.91,236.611z M181.825,277.393v11.392h-0.001H137.65
-			v-11.392c0-6.281,5.111-11.391,11.393-11.391h21.391C176.715,266.002,181.825,271.111,181.825,277.393z M289.452,238.589
-			c-3.905-3.904-10.236-3.904-14.142,0l-9.31,9.31V62.785h158.379l-19.989,19.99c-3.905,3.905-3.905,10.237,0,14.143
-			c1.953,1.952,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l19.99-19.99v211.857h-44.174v-11.392
-			c0-17.309-14.082-31.391-31.392-31.391h-21.391c-17.31,0-31.392,14.082-31.392,31.391v11.392H266v-12.601l23.452-23.452
-			C293.357,248.827,293.357,242.495,289.452,238.589z M374.349,277.393v11.392h-0.001h-44.174v-11.392
-			c0-6.281,5.11-11.391,11.392-11.391h21.391C369.238,266.002,374.349,271.111,374.349,277.393z M454.608,42.784H57.391
-			c-6.281,0-11.392-5.109-11.392-11.391V20h420v11.393C465.999,37.674,460.889,42.784,454.608,42.784z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M398.606,102.701c-3.905-3.905-10.236-3.905-14.142,0l-0.277,0.277c-3.905,3.905-3.905,10.237,0,14.143
-			c1.953,1.952,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l0.277-0.277C402.511,112.939,402.511,106.607,398.606,102.701z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M119.383,216.135c-3.905-3.904-10.236-3.904-14.142,0l-0.277,0.277c-3.905,3.905-3.905,10.237,0,14.143
-			c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.118-0.977,7.071-2.929l0.277-0.277
-			C123.288,226.373,123.288,220.041,119.383,216.135z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M10.236,492H10c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h0.236c5.523,0,10-4.478,10-10
-			C20.236,496.477,15.759,492,10.236,492z"/>
-	</g>
-</g>
-<g>
-	<g>
-		<path d="M502,492h-0.236c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H502c5.523,0,10-4.478,10-10
-			C512,496.477,507.523,492,502,492z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
 
-      </span><span>REGISTER</span></a>
-  <a href="#"><span >
+
+   <a href="{% url 'gallery' %}" target="_blank"><span >
       <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -537,6 +446,11 @@
 </svg>
 
       </span><span>GALLERY</span></a>
+        <div id="help">
+            <span><a href="https://www.facebook.com/auroraiiitm/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+            <span><a href="https://www.facebook.com/auroraiiitm/videos/1508292579282663/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
+            <span><a href="mailto:aurora2k18.iiitm@gmail.com?subject=I%20Need%20Help"><i class="fa fa-question" aria-hidden="true"></i></a></span>
+        </div>
     </div>
 
 </div>
@@ -557,7 +471,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Code</strong> Conquest</h1>
+                            <h1><strong>Corna</strong></h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -567,20 +481,18 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
-                            <h3 >-Linus Trovaldts</h3>
-
+                            <h2>&quot;<i>Your heart is just a beatbox for the song of your life</i>&quot;</h2>
                         </div>
                     </div>
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">If you are confident enough that you have mastered the ultimate mind sport, then come solve mind blowing problems and play the game of sports in Code Conquest.<br/>
-                                It is a challenging stage, nail biting one! Step up your coding skills and gather to compete for the crown!
+                            <p style="font-weight: 500;">
+                                Aurora2K17 invites music bands to battle it out on the stage.Battle aginst each other to win the coveted victory title.Electrify the crowd with your music.Connect with the audience and show the unity of your music.Put your pride and that of your band on the line and blow the roof off!
                             </p>
                         </div>
                     </div>
-                    <div class="row" id="rules">
+                  <!--  <div class="row" id="rules">
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
@@ -623,8 +535,7 @@
                             <h5>Aniruddha Shrikhande</h5>
                             <h5>Palak Jain</h5>
                         </div>
-
-                    </div>
+                    </div>-->
                     <div class="row">
 
                         <div class="col-md-12 col-sm-12">
@@ -637,7 +548,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Hack</strong>athon</h1>
+                            <h1><strong>Dubsmash</strong></h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -645,66 +556,51 @@
                             <a class="anchorTag" href="#contact">Contacts</a>
                         </div>
                     </div>
-                    <div class="row">
+                  <!--  <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to produce bigger and better idiots. So far, the universe is winning</i>&quot;</h2>
+                            <h2>&quot;<i>Words have incredible power.
+                                They can make people’s hearts soar,
+                                or they can make people’s hearts sore
+                            </i>&quot;</h2>
+&lt;!&ndash;
                             <h3 >-Rick Cook</h3>
+&ndash;&gt;
 
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row" id="about">
                         <div class="col-md-12">
-                            <h2>About</h2>
-                            <p style="font-weight: 500;">Let your imagination flow free and enable you to push the boundaries of what can be done. Whack your brain in this 24 hour hackathon where optimization, skill, proficiency, hard work and trying till the very end matters! Leave no excuse to not build something that doesn’t blow our minds!
-                            </p>
-                        </div>
+                            <p style="font-weight: 500;">
+                                Bringing you the colors of contemporary world, we celebrate your participation in Dubsmash. Dubsmash is all about enjoying lip syncing your favorite movie quotes or musical sounds. Be ascreative and humorous as you can be submitting your entry, and laugh out loud enjoying other submissions.                            </p>
+                       </div>
                     </div>
-                    <div class="row" id="rules">
+                   <!-- <div class="row" id="rules">
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
-                                <li><h3>Phases</h3>
                                     <p>
-                                        1.	Registration and announcement of the theme.
+                                        1. The event consists of three independent sub-events. Nukkad-Natak, Poetry Slam and Open Mic.                                    </p>
+                                    <p>
+                                        2. Participants can participate in one or more events.
                                     </p>
                                     <p>
-                                        2.	Build a working app on platform you wish in 24 hours.
-                                    </p>
+                                        3. Nukkad-Natak is the street play. The participants are free to choose any theme and context for their play. A team of minimum 4 people is required. Participants will be judged on the basis of thought, creativity and acting skills.                                    </p>
                                     <p>
-                                        3.	At the end, give a small presentation in front of experts.
-                                    </p>
+                                        4. Poetry Slam is an individual event. Poets can perform their poetry in Hindi, Urdu, English or a mix of these languages. The poem must be your original one.                                    </p>
                                     <p>
-                                        4.	Winners will be awarded with prizes.
-                                    </p>
-                                </li>
-                                <li><h3>Rules</h3>
-                                    <p>
-                                       •	There can be a maximum of 4 members in a team.<br/>
-•	All the code, design, must be created/developed during the Hackathon only, so that all the participants start off on the same footing.<br/>
-•	Internet and Wifi connectivity will be provided throughout the event.<br/>
-•	To participate in the Hackathon, each member of the team, must register for the Hackathon online through the website.<br/>
-•	The final product should be deployed as a mobile app, web app, software or any other platform accessible to the user.<br/>
-•	Participants should bring their own resources. (Laptops, chargers etc.) .<br/>
-•	It is mandatory for the participants to bring their personal identity proof.<br/>
-•	Theme for event will be provided on the time of the Hackathon itself only.<br/>
-•	Any member of the team can take break for refreshments at any time.<br/>
-•	No type of PLAGIARISM would be entertained. Any team found doing so will be disqualified   straight away.<br/>
-•	In case of any dispute, the decision taken by event heads will be final.
-
+                                        5. Open Mic is also an individual event and can include comedy act, spoken word, short story recitation etc. The content you deliver must be of your own.
                                     </p>
                                 </li>
-
-
 
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row" id="contact">
                         <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Kartikey Sharma</h5>
-                            <h5>Shresth Verma</h5>
-                            <h5>Yash Prajapati</h5>
+                            <h5>Dheeraj barelia 7024301801</h5>
+                            <h5>Piyush gautam</h5>
+                            <h5>Rahul goyal</h5>
                         </div>
 
                     </div>
@@ -720,7 +616,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Anime and </strong>TV series Quiz</h1>
+                            <h1><strong>Sketching</strong></h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -730,42 +626,27 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
-                            <h3 >-Linus Trovaldts</h3>
+                            <h2>&quot;<i>Art enables us to find ourselves and lose ourselves at the same time</i>&quot;</h2>
+                            <h3 >-Thomas Merton, No Man Is an Island</h3>
 
                         </div>
                     </div>
                     <div class="row" id="about">
                         <div class="col-md-12">
-                            <h2>About</h2>
-                            <p style="font-weight: 500;">Great minds think alike but sometimes they think about Anime!
-A mix of questions from anime and various tv series are all set to test how truly you watched them when your eyes were set on your laptop screens. Come prove everyone who the real fan is
-</p>
 
-                        </div>
+                            <p style="font-weight: 500;">
+                                A sketch captures the reality and the abstraction of the moment. It uncovers elaborate pieces of moments that were either arranged or imagined. If you seek to demonstrate your artistry of sketching, this Sketching Competition is just the place for you.
+                            </p>
+                               </div>
                     </div>
                     <div class="row" id="rules">
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
+
                                 <li>
                                     <p>
-                                        Participants will be tested on their sound knowledge of famous anime and TV Series.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        There will be only onsite competition in this event.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        This is a team competition, participants must participate in teams of at least 2 and at max 3.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        The quiz has a duration of 1 hour and is paper-pen based.
+                                        participants will be given a topic on which they have to draw a sketch. Pencils of any kind is allowed and must be with the participant. The drawing sheet will be provided on the spot
                                     </p>
                                 </li>
 
@@ -775,7 +656,8 @@ A mix of questions from anime and various tv series are all set to test how trul
                     <div class="row" id="contact">
                         <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Anurag Priydarshi </h5>
+                            <h5> pradhuman singh 9713764567</h5>
+                            <h5>shubham yadav 8989640838</h5>
 
                         </div>
 
@@ -792,7 +674,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Bit </strong>Quiz </h1>
+                            <h1><strong>Dancing </strong>Mantra</h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -800,18 +682,17 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <a class="anchorTag" href="#contact">Contacts</a>
                         </div>
                     </div>
-                    <div class="row">
+                   <!-- <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
-                            <h3 >-Linus Trovaldts</h3>
-
+                            <h2>&quot;<i>If a photographer cares about the people before the lens and is compassionate, much is given. It is the photographer, not the camera, that is the instrument</i>&quot;</h2>
+                            &lt;!&ndash;<h3 >-Robert Frost</h3>&ndash;&gt;
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">Aurora brings to you Bit Quiz- the ultimate test of techno-managerial acumen of the participants. Attracting business enthusiasts and probable managers alike, Bit quiz is sure to enthral you with its high tense biz environment!</p>
-
+                            <p style="font-weight: 500;">
+                                The beauty of a solo dance is in the opportunity to highlight your greatest strengths as a dancer. Whether you are a technically trained dancer or simply enjoy entertaining others through movement, DANCING MANTRA gives you a chance to capture an audience's attention. Move your body to the groovy beats and fill your vision with crowds cheering for you on stage!                            </p>
                         </div>
                     </div>
                     <div class="row" id="rules">
@@ -820,23 +701,25 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <ul>
                                 <li>
                                     <p>
-                                       Participants will be tested on their sound knowledge of Business and IT.
+                                        Maximum time limit:
+                                <br>
+                                        •	Elimination round: 3 min.
+                                <br>
+                                        •	Final round: 5 min.
+
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        There will be only onsite competition in this event.
-                                    </p>
+                                        	Only the participants decided by the judge will qualify for the final round                                    </p>
                                 </li>
                                 <li>
                                     <p>
-                                        This is a team competition, participants must participate in teams of at least 2 and at max 3.
-                                    </p>
+                                        It is not necessary for the participants to perform on different songs for elimination and final round                                    </p>
                                 </li>
                                 <li>
                                     <p>
-                                        The quiz has a duration of 1 hour and is paper-pen based.
-                                    </p>
+                                        Costumes are not necessary for the elimination round but marks will be given for costumes and props in the final round.                                     </p>
                                 </li>
 
                             </ul>
@@ -845,8 +728,9 @@ A mix of questions from anime and various tv series are all set to test how trul
                     <div class="row" id="contact">
                         <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Kushal Dinesh Chauhan  </h5>
-
+                            <h5>Anshul Warade 7697048080</h5>
+                            <h5>Priya Yadav</h5>
+                            <h5>Shubham Shukla</h5>
                         </div>
 
                     </div>
@@ -862,7 +746,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Language</strong> Quiz</h1>
+                            <h1><strong>Dancing </strong>Duo</h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -870,18 +754,18 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <a class="anchorTag" href="#contact">Contacts</a>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
-                            <h3 >-Linus Trovaldts</h3>
-
+                            <h2>&quot;<i>All the world’s a stage and most of us are desperately unrehearsed.</i>&quot;</h2>
+                            &lt;!&ndash;<h3 >-Linus Trovaldts</h3>&ndash;&gt;
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row" id="about">
                         <div class="col-md-12">
-                            <h2>About</h2>
-                            <p style="font-weight: 500;">Brain prepped up? Check! Team mates gathered? Check! Pencils ready? Check! The scribbling on the paper starts as the programming quiz is all set to rattle the grey cells of the best programmers across the country!</p>
-
+                            <p>The stage is all set! The battle field is ready! Show your opponent that this is your stage and turn him into mere specks of dust as you weave your thrilling and passionate dance moves. Just dance hard and surprise the audience even harder!!
+                                <br>
+                                So, are you ready for "The Dancing Duo”?
+                            </p>
                         </div>
                     </div>
                     <div class="row" id="rules">
@@ -890,28 +774,25 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <ul>
                                 <li>
                                     <p>
-                                        Participants will be tested on their sound knowledge of different programming languages.
+                                        Maximum time limit:
+                                        <br>
+                                        •	Elimination round: 3 min.
+                                        <br>
+                                        •	Final round: 5 min.
+
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        The languages will include C,C++,Java, Python etc.
-                                    </p>
+                                        Only the participants decided by the judge will qualify for the final round                                    </p>
                                 </li>
                                 <li>
                                     <p>
-                                        There will be only onsite competition in this event.
-                                    </p>
+                                        It is not necessary for the participants to perform on different songs for elimination and final round                                    </p>
                                 </li>
                                 <li>
                                     <p>
-                                        This is a team competition, participants must participate in teams of at least 2 and at max 3.
-                                    </p>
-                                </li>
-                                 <li>
-                                    <p>
-                                       The quiz has a duration of 1 hour and is paper-pen based.
-                                    </p>
+                                        Costumes are not necessary for the elimination round but marks will be given for costumes and props in the final round.                                     </p>
                                 </li>
 
                             </ul>
@@ -920,7 +801,9 @@ A mix of questions from anime and various tv series are all set to test how trul
                     <div class="row" id="contact">
                         <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Kushal Dinesh Chauhan  </h5>
+                            <h5>Anshul Warade 7697048080</h5>
+                            <h5>Priya Yadav</h5>
+                            <h5>Shubham Shukla</h5>
 
                         </div>
 
@@ -937,7 +820,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Aptitude </strong> Quiz</h1>
+                            <h1><strong>SYNCHRO </strong>FUNK</h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -945,19 +828,19 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <a class="anchorTag" href="#contact">Contacts</a>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                         <div class="col-md-12">
                             <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
                             <h3 >-Linus Trovaldts</h3>
 
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">Great minds think alike but sometimes they think about Anime!
-A mix of questions from anime and various tv series are all set to test how truly you watched them when your eyes were set on your laptop screens. Come prove everyone who the real fan is
-</p>
+                            <p style="font-weight: 500;">
+                                Who says dance isn't magical? Elegant coordination of every dance move in a team doesn’t sound less magical, does it? So Aurora gives you an opportunity to create a beautiful optical illusion with synchronization of music beats and dance moves. Come, grab it
+                            </p>
 
                         </div>
                     </div>
@@ -967,33 +850,37 @@ A mix of questions from anime and various tv series are all set to test how trul
                             <ul>
                                 <li>
                                     <p>
-                                        Participants will be tested on their sound knowledge of famous anime and TV Series.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        There will be only onsite competition in this event.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        This is a team competition, participants must participate in teams of at least 2 and at max 3.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        The quiz has a duration of 1 hour and is paper-pen based.
-                                    </p>
-                                </li>
+                                        Minimum number of team member-4
+<br>
+                                        Maximum number of team member-15
 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        	Maximum time limit
+<br>
+                                        •	Elimination round : 4 min.
+<br>
+                                        •	Final round : 6 min.
+
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        	All the teams will first have to compete in the elimination round. Only the teams selected by the judge will qualify for the next round.
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row" id="contact">
                         <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Anurag Priydarshi </h5>
-
+                            <h5>Anshul Warade 7697048080</h5>
+                            <h5>Priya Yadav</h5>
+                            <h5>Shubham Shukla</h5>
                         </div>
 
                     </div>
@@ -1009,7 +896,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Aptitude </strong> Quiz</h1>
+                            <h1><strong>Eumelia:</strong> Aurora idol</h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -1019,17 +906,18 @@ A mix of questions from anime and various tv series are all set to test how trul
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
-                            <h3 >-Linus Trovaldts</h3>
+                            <h2>&quot;<i>When words fail, music speaks</i>&quot;</h2>
+                            <h3 >-Shakespeare</h3>
 
                         </div>
                     </div>
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">Great minds think alike but sometimes they think about Anime!
-A mix of questions from anime and various tv series are all set to test how truly you watched them when your eyes were set on your laptop screens. Come prove everyone who the real fan is
-</p>
+                            <p style="font-weight: 500;">GMusic, a medium of expressions, which knows no bounds no definitions, never fails in reviving one's moods.
+                                Aurora brings to you an unprecedented experience - “Eumelia”, the singing competition.
+                                Grab the stage, move the audience with one single tone and make the crowd forget themselves for your performance.
+                                Behind the inscrutable chords and melodies, just be your best self and own the stage</p>
 
                         </div>
                     </div>
@@ -1037,36 +925,51 @@ A mix of questions from anime and various tv series are all set to test how trul
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
+                                <h4>Eliminations:</h4>
                                 <li>
                                     <p>
-                                        Participants will be tested on their sound knowledge of famous anime and TV Series.
+                                        Participation should be solo.
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        There will be only onsite competition in this event.
+                                        Participants will be given a performance time of 2 minutes.
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        This is a team competition, participants must participate in teams of at least 2 and at max 3.
+                                        No backing music or accompaniment is permitted.
+                                    </p>
+                                </li>
+                                <h4>Finals:</h4>
+                                <li>
+                                    <p>
+                                        Participation should be solo.
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        The quiz has a duration of 1 hour and is paper-pen based.
+                                        Participants will be given a performance time of 4 minutes.
                                     </p>
                                 </li>
-
+                                <li>
+                                    <p>
+                                        Participants can perform with live backing music. Participants may play an instrument themselves OR sing over a karaoke track.
+                                        Karaoke will not be provided, it must be brought by the participant (MP3 format in a pen drive).                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Song(s) sung in the eliminations must not be repeated in the finals.                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="row" id="contact">
-                        <div class="col-md-12 col-sm-12">
+                       <div class="col-md-12 col-sm-12">
                             <h2>Contacts</h2>
-                            <h5>Anurag Priydarshi </h5>
-
-                        </div>
+                            <h5>Pulkit Rathi</h5>
+                           <h5>Samarth Shetty</h5>
+                       </div>
 
                     </div>
                     <div class="row">
@@ -1081,7 +984,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Aptitude </strong> Quiz</h1>
+                            <h1><strong>MnM </strong></h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -1091,21 +994,23 @@ A mix of questions from anime and various tv series are all set to test how trul
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
+                            <h2>&quot;<i>Beauty only captures attention, personality is what captures the heart</i>&quot;</h2>
+<!--
                             <h3 >-Linus Trovaldts</h3>
+-->
 
                         </div>
                     </div>
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">Great minds think alike but sometimes they think about Anime!
-A mix of questions from anime and various tv series are all set to test how truly you watched them when your eyes were set on your laptop screens. Come prove everyone who the real fan is
-</p>
+                            <p style="font-weight: 500;">
+                                The guts to be out there on the stage and prove it to the world that you are an all rounder is like checkmate in the game of chess. Join us in the ultimate test of wit and attitude, and battle it out for the most sought out title of the fest as you get a chance to get crowned as Mr. And Miss Aurora!
+                            </p>
 
                         </div>
                     </div>
-                    <div class="row" id="rules">
+                   <!-- <div class="row" id="rules">
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
@@ -1140,7 +1045,7 @@ A mix of questions from anime and various tv series are all set to test how trul
 
                         </div>
 
-                    </div>
+                    </div>-->
                     <div class="row">
 
                         <div class="col-md-12 col-sm-12">
@@ -1153,7 +1058,7 @@ A mix of questions from anime and various tv series are all set to test how trul
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><strong>Aptitude </strong> Quiz</h1>
+                            <h1><strong>ACOUSTICS</strong></h1>
                             <a class="anchorTag" href="#about">About</a>
                             <span style="font-size: 1.6em;font-weight: 500;">|</span>
                             <a class="anchorTag" href="#rules">Rules</a>
@@ -1163,21 +1068,24 @@ A mix of questions from anime and various tv series are all set to test how trul
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>&quot;<i>Talk is cheap, show me the code.</i>&quot;</h2>
+                            <h2>&quot;<i>Singing instrumental music is most important,because while you play an instrument you are singing through the instrument...actually,you are singing inside.</i>&quot;</h2>
+<!--
                             <h3 >-Linus Trovaldts</h3>
+-->
 
                         </div>
                     </div>
                     <div class="row" id="about">
                         <div class="col-md-12">
                             <h2>About</h2>
-                            <p style="font-weight: 500;">Great minds think alike but sometimes they think about Anime!
-A mix of questions from anime and various tv series are all set to test how truly you watched them when your eyes were set on your laptop screens. Come prove everyone who the real fan is
-</p>
-
+                            <p style="font-weight: 500;">
+                                Musical instrument are a conduit for our feelings.Sometimes words are unnecessary to express
+                                ourselves,all we need to do is strum out a melody and let it seep into our soul taking us willing
+                                hostages.Acoustics gives you the perfect opportunity to pick up any musical instrument of your choice and wow the audience.
+                            </p>
                         </div>
                     </div>
-                    <div class="row" id="rules">
+                 <!--   <div class="row" id="rules">
                         <div class="col-md-12">
                             <h2>Rules</h2>
                             <ul>
@@ -1212,6 +1120,692 @@ A mix of questions from anime and various tv series are all set to test how trul
 
                         </div>
 
+                    </div>-->
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page10" class="pt-page pt-page-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>DJ </strong>wars</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>There are people who play records and then there are DJs who blow minds</i>&quot;</h2>
+                            <!--
+                                                        <h3 >-Linus Trovaldts</h3>
+                            -->
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <h2>About</h2>
+                            <p style="font-weight: 500;">
+                                Calling all Djs,the hunt for crazy musical geniuses is on!Show your talent and watch the crowd go wild on the dance floor.Mix and match the songs and create magic.Light up the night with your awesome DJing skills and get grooving.Get the party started!
+                            </p>
+                        </div>
+                    </div>
+                    <!--   <div class="row" id="rules">
+                           <div class="col-md-12">
+                               <h2>Rules</h2>
+                               <ul>
+                                   <li>
+                                       <p>
+                                           Participants will be tested on their sound knowledge of famous anime and TV Series.
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           There will be only onsite competition in this event.
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           This is a team competition, participants must participate in teams of at least 2 and at max 3.
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           The quiz has a duration of 1 hour and is paper-pen based.
+                                       </p>
+                                   </li>
+
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="row" id="contact">
+                           <div class="col-md-12 col-sm-12">
+                               <h2>Contacts</h2>
+                               <h5>Anurag Priydarshi </h5>
+
+                           </div>
+
+                       </div>-->
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page11" class="pt-page pt-page-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Parivesh</strong></h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>I have always believed that fashion was not only to make women more beautiful but also
+                                to reassure them, give them confidence.
+                            </i>&quot;</h2>
+                                                        <h3 >-Yves Saint Laurent</h3>
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <h2>About</h2>
+                            <p style="font-weight: 500;">
+                                Fashion is an expression of art, a manner to manifest oneself, it is experimenting with and
+                                interrupting the laws of traditional dressing. Fashion is no elementary abstraction for it is an
+                                amalgamation of boundless individuality, advancement, and countless possibilities. Parivesh
+                                is a boulevard to express yourself.
+
+                            </p>
+                        </div>
+                    </div>
+                       <div class="row" id="rules">
+                           <div class="col-md-12">
+                               <h2>Rules</h2>
+                               <ul>
+                                   <li>
+                                       <p>
+                                           	Each team can showcase a maximum of three rounds.                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Each team will be allotted 8:00-10:00 minutes for each round(stage-in to stage-out)
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Each team can have maximum 20 members.
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           	The teams are responsible for their own music and
+                                           sequence
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           	Music is to be submitted in a pen drive(in mp3 format). All music files must be submitted to the organizers at least 3 days prior to  the event.                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Lighting facility is to be availed. One team member has to supervise the lighting
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Crossover teams can be formed among students of different institutes, given they have a valid college ID  of their present year.
+                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Teams can ask for assistance from people outside the college such as choreographers, make-up artists, but these professionals will not be considered as a part of the team. These personnels will be the sole responsibility of the team.                                       </p>
+                                   </li>
+                                   <li>
+                                       <p>
+                                           Teams are suggested to inform the organizers of any kind of props they are planning to use. Use of water, fire, pets or any hazardous materials is not allowed. Teams are instructed to consult the organizers before using any such material                                       </p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <!--<div class="row" id="contact">
+                           <div class="col-md-12 col-sm-12">
+                               <h2>Contacts</h2>
+                               <h5>Anurag Priydarshi </h5>
+
+                           </div>
+
+                       </div>-->
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page12" class="pt-page pt-page-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Short </strong>Film Contest</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>
+                                A gem of a short film has a sense of pure joy in animation that is different from anything you see in feature film
+                            </i>&quot;</h2>
+                            <h3 >-John Lasseter</h3>
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <h2>About</h2>
+                            <p style="font-weight: 500;">
+                                Short films are as  elegant, expressive and creative as feature-length films. They embrace writers as prominent as other cinematic storytelling. Pikture celebrates admiring the beauty of Short films. The Short Film Contest challenges the participant’s creativity and imagination and inspires them to combine their ideas with our theme.
+                            </p>
+                        </div>
+                    </div>
+                  <!--  <div class="row" id="rules">
+                        <div class="col-md-12">
+                            <h2>Rules</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Each team can showcase a maximum of three rounds.                                       </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Each team will be allotted 8:00-10:00 minutes for each round(stage-in to stage-out)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Each team can have maximum 20 members.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        The teams are responsible for their own music and
+                                        sequence
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Music is to be submitted in a pen drive(in mp3 format). All music files must be submitted to the organizers at least 3 days prior to  the event.                                       </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Lighting facility is to be availed. One team member has to supervise the lighting
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Crossover teams can be formed among students of different institutes, given they have a valid college ID  of their present year.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Teams can ask for assistance from people outside the college such as choreographers, make-up artists, but these professionals will not be considered as a part of the team. These personnels will be the sole responsibility of the team.                                       </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Teams are suggested to inform the organizers of any kind of props they are planning to use. Use of water, fire, pets or any hazardous materials is not allowed. Teams are instructed to consult the organizers before using any such material                                       </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5>Anurag Priydarshi </h5>
+
+                        </div>
+
+                    </div>-->
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page13" class="pt-page pt-page-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Photography </strong>Contest</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>
+                                To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.                            </i>&quot;</h2>
+                            <h3 >-Elliott Erwitt</h3>
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <h2>About</h2>
+                            <p style="font-weight: 500;">
+                                Cherishing the magnificent art of Photography, Pikture instigates an event appreciating and challenging the virtuosity of budding and seasoned photographers. &quot;Dedicated to the aesthetics of photography, this event would judge the entrants based on the provided theme.                            </p>
+                        </div>
+                    </div>
+                    <!--  <div class="row" id="rules">
+                          <div class="col-md-12">
+                              <h2>Rules</h2>
+                              <ul>
+                                  <li>
+                                      <p>
+                                          Each team can showcase a maximum of three rounds.                                       </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Each team will be allotted 8:00-10:00 minutes for each round(stage-in to stage-out)
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Each team can have maximum 20 members.
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          The teams are responsible for their own music and
+                                          sequence
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Music is to be submitted in a pen drive(in mp3 format). All music files must be submitted to the organizers at least 3 days prior to  the event.                                       </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Lighting facility is to be availed. One team member has to supervise the lighting
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Crossover teams can be formed among students of different institutes, given they have a valid college ID  of their present year.
+                                      </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Teams can ask for assistance from people outside the college such as choreographers, make-up artists, but these professionals will not be considered as a part of the team. These personnels will be the sole responsibility of the team.                                       </p>
+                                  </li>
+                                  <li>
+                                      <p>
+                                          Teams are suggested to inform the organizers of any kind of props they are planning to use. Use of water, fire, pets or any hazardous materials is not allowed. Teams are instructed to consult the organizers before using any such material                                       </p>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="row" id="contact">
+                          <div class="col-md-12 col-sm-12">
+                              <h2>Contacts</h2>
+                              <h5>Anurag Priydarshi </h5>
+
+                          </div>
+
+                      </div>-->
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page14" class="pt-page pt-page-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Open </strong>Mic </h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                  <!--  <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>Words have incredible power.
+                                They can make people’s hearts soar,
+                                or they can make people’s hearts sore
+                            </i>&quot;</h2>
+                            &lt;!&ndash;
+                                                        <h3 >-Rick Cook</h3>
+                            &ndash;&gt;
+
+                        </div>
+                    </div>-->
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+
+                            <p style="font-weight: 500;">
+                                The Open Mic is all about an artist, their love and appreciation for that art and sharing their work on the stage. We all have inner voices that we have hidden from the world. We welcome you to unleash your inner Rafi or Jerry Seinfeld here.
+                            </p>
+                             </div>
+                    </div>
+                    <!--<div class="row" id="rules">
+                        <div class="col-md-12">
+                            <h2>Rules</h2>
+                            <ul>
+                                <p>
+                                    1. The event consists of three independent sub-events. Nukkad-Natak, Poetry Slam and Open Mic.                                    </p>
+                                <p>
+                                    2. Participants can participate in one or more events.
+                                </p>
+                                <p>
+                                    3. Nukkad-Natak is the street play. The participants are free to choose any theme and context for their play. A team of minimum 4 people is required. Participants will be judged on the basis of thought, creativity and acting skills.                                    </p>
+                                <p>
+                                    4. Poetry Slam is an individual event. Poets can perform their poetry in Hindi, Urdu, English or a mix of these languages. The poem must be your original one.                                    </p>
+                                <p>
+                                    5. Open Mic is also an individual event and can include comedy act, spoken word, short story recitation etc. The content you deliver must be of your own.
+                                </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>-->
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5>Dheeraj barelia 7024301801</h5>
+                            <h5>Piyush gautam</h5>
+                            <h5>Rahul goyal</h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page15" class="pt-page pt-page-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Poetry</strong> Slam</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <h2>&quot;<i>Poetry is when an emotion has found its thought and the thought has found words.
+                              </i>&quot;</h2>
+                              <h3 >-Robert Frost</h3>
+
+                          </div>
+                      </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <p style="font-weight: 500;">
+                                Passionate feelings make for powerful verses on paper, and you are invited to come witness some or even make some of your own. Pour your heart and soul as you communicate your deepest thoughts, let the audience be struck in awe and experience the goosebumps                                /p>
+                        </div>
+                    </div>
+                    <!-- <div class="row" id="rules">
+                         <div class="col-md-12">
+                             <h2>Rules</h2>
+                             <ul>
+                                     <p>
+                                         1. The event consists of three independent sub-events. Nukkad-Natak, Poetry Slam and Open Mic.                                    </p>
+                                     <p>
+                                         2. Participants can participate in one or more events.
+                                     </p>
+                                     <p>
+                                         3. Nukkad-Natak is the street play. The participants are free to choose any theme and context for their play. A team of minimum 4 people is required. Participants will be judged on the basis of thought, creativity and acting skills.                                    </p>
+                                     <p>
+                                         4. Poetry Slam is an individual event. Poets can perform their poetry in Hindi, Urdu, English or a mix of these languages. The poem must be your original one.                                    </p>
+                                     <p>
+                                         5. Open Mic is also an individual event and can include comedy act, spoken word, short story recitation etc. The content you deliver must be of your own.
+                                     </p>
+                                 </li>
+
+                             </ul>
+                         </div>
+                     </div>-->
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5>Dheeraj barelia 7024301801</h5>
+                            <h5>Piyush gautam</h5>
+                            <h5>Rahul goyal</h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page16" class="pt-page pt-page-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Nukkad</strong> Natak</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>All the world’s a stage and most of us are desperately unrehearsed.
+                            </i>&quot;</h2>
+                            <!--<h3 >-Robert Frost</h3>-->
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <p style="font-weight: 500;">
+                                The art of Street play is no inferior to that of a Stage Play. India’s traditional street theater, Nukkad Natak is an exquisite blend of a beautiful and encouraging message, intense and influential oratory, and engaging dialogues. Improvisation, performance and a message make this a of artistic abilities. At A-lit Perform, we give you the chance to inspire and get inspired through these street plays                            </p>
+                       </div>
+                    </div>
+                    <!-- <div class="row" id="rules">
+                         <div class="col-md-12">
+                             <h2>Rules</h2>
+                             <ul>
+                                     <p>
+                                         1. The event consists of three independent sub-events. Nukkad-Natak, Poetry Slam and Open Mic.                                    </p>
+                                     <p>
+                                         2. Participants can participate in one or more events.
+                                     </p>
+                                     <p>
+                                         3. Nukkad-Natak is the street play. The participants are free to choose any theme and context for their play. A team of minimum 4 people is required. Participants will be judged on the basis of thought, creativity and acting skills.                                    </p>
+                                     <p>
+                                         4. Poetry Slam is an individual event. Poets can perform their poetry in Hindi, Urdu, English or a mix of these languages. The poem must be your original one.                                    </p>
+                                     <p>
+                                         5. Open Mic is also an individual event and can include comedy act, spoken word, short story recitation etc. The content you deliver must be of your own.
+                                     </p>
+                                 </li>
+
+                             </ul>
+                         </div>
+                     </div>-->
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5>Dheeraj barelia 7024301801</h5>
+                            <h5>Piyush gautam</h5>
+                            <h5>Rahul goyal</h5>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page17" class="pt-page pt-page-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>On-Spot</strong> Painting</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>Art enables us to find ourselves and lose ourselves at the same time</i>&quot;</h2>
+                            <h3 >-Thomas Merton, No Man Is an Island</h3>
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <p style="font-weight: 500;">
+                                Art is what happens when inspiration and talent comes together. While the latter takes years to build, at Le-Arte Fiesta, participants will get plenty of inspiration to make spontaneous art. Let you creativity know no bounds as we admire your skills in the On-Spot Painting Competition.
+                            </p>
+                            </div>
+                    </div>
+                    <div class="row" id="rules">
+                        <div class="col-md-12">
+                            <h2>Rules</h2>
+                            <ul>
+
+                                <li>
+                                    <p>
+                                        participants will be given a topic on which they have to draw as well as color a sketch. Pencils of any kind is allowed and must be with the participant. So, will be the colors. The drawing sheet will be provided on the spot.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5> pradhuman singh 9713764567</h5>
+                            <h5>shubham yadav 8989640838</h5>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12">
+                            <a href="#" id="registerButton2">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page18" class="pt-page pt-page-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1><strong>Comic</strong>Strip</h1>
+                            <a class="anchorTag" href="#about">About</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#rules">Rules</a>
+                            <span style="font-size: 1.6em;font-weight: 500;">|</span>
+                            <a class="anchorTag" href="#contact">Contacts</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>&quot;<i>Art enables us to find ourselves and lose ourselves at the same time</i>&quot;</h2>
+                            <h3 >-Thomas Merton, No Man Is an Island</h3>
+
+                        </div>
+                    </div>
+                    <div class="row" id="about">
+                        <div class="col-md-12">
+                            <p style="font-weight: 500;">
+                                Simple yet so profoundly expressive, comics are more than tiny squares with thought nubbles. Combine your expression, with your artsy illustration and dialogue writing skills . Come and tell us your story, through a demonstrative comic strip.                            </p>
+                        </div>
+                    </div>
+<!--
+                    <div class="row" id="rules">
+                        <div class="col-md-12">
+                            <h2>Rules</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        The event consists of three independent sub-events. Sketching, Color-Drawing and Paper and Clay modelling.                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Participants can participate in one or more events.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        In sketching, participants will be given a topic on which they have to draw a sketch. Pencils of any kind is allowed and must be with the participant. The drawing sheet will be provided on the spot
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        In color-drawing, participants will be given a topic on which they have to draw as well as color a sketch. Pencils of any kind is allowed and must be with the participant. So, will be the colors. The drawing sheet will be provided on the spot.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        In paper and clay modelling, participants will be given a topic on which they have to model a 3D object or a scene. The clay should be brought by the participant                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+-->
+                    <div class="row" id="contact">
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Contacts</h2>
+                            <h5> pradhuman singh 9713764567</h5>
+                            <h5>shubham yadav 8989640838</h5>
+
+                        </div>
+
                     </div>
                     <div class="row">
 
@@ -1222,19 +1816,40 @@ A mix of questions from anime and various tv series are all set to test how trul
                 </div>
             </div>
 
-		</div>
 
-		<div class="pt-message">
+
+        </div>
+            <div class="pt-message">
 			<p>Your browser does not support CSS animations.</p>
 		</div>
-        <div id="eventmenu" >
-            <h2 style="position: absolute;z-index: -1;">Technical</h2>
-            <a href="#">Code Conquest</a>
+        <div id="eventmenu" style="display: inline;">
+            <h2 style="position: absolute;z-index: -1;">Cultural</h2>
+            <a href="#">Corna</a>
 
-            <a href="#">Quiz</a>
+            <a href="#">Dubsmash</a>
 
-            <a href="#">Hackathon</a>
-            <a href="#">Techathlon</a>
+            <a href="#">Sketching</a>
+            <a href="#">Dancing Mantra</a>
+             <a href="#">Dancing Duo</a>
+
+            <a href="#">SYNCHRO FUNK</a>
+
+            <a href="#">Eumelia: Aurora idol</a>
+            <a href="#">MnM</a>
+            <a href="#">ACOUSTICS</a>
+
+            <a href="#">DJ wars</a>
+
+            <a href="#">Parivesh</a>
+            <a href="#">Short Film Contest</a>
+            <a href="#">Photography Contest</a>
+
+            <a href="#">Open Mic</a>
+            <a href="#">Poetry Slam</a>
+             <a href="#">Nukkad Natak</a>
+
+            <a href="#">On-Spot Painting</a>
+            <a href="#">ComicStrip</a>
 
 
         </div>
@@ -1243,4 +1858,78 @@ A mix of questions from anime and various tv series are all set to test how trul
 		<script src="/static/aurora18/js/pagetransitions.js"></script>
         <script src="/static/aurora18/js/function.js"></script>
 	</body>
+<script>
+    $('#registerButton,#registerButton2').click(function () {
+        var page=$('.pt-page-current').attr('id');
+        var event=""
+        switch (page){
+
+            case "page1":
+                event="Corna";
+                break;
+
+            case "page2":
+                event="Dubsmash";
+                break;
+
+            case "page3":
+                event="Sketching";
+                break;
+            case "page4":
+                event="Dancing_Mantra";
+                break;
+             case "page5":
+                event="Dancing_Duo";
+                break;
+
+            case "page6":
+                event="SYNCHRO_FUNK";
+                break;
+
+            case "page7":
+                event="Aurora_idol";
+                break;
+            case "page8":
+                event="MnM";
+                break;
+            case "page9":
+                event="ACOUSTICS";
+                break;
+
+            case "page10":
+                event="DJ_wars";
+                break;
+
+            case "page11":
+                event="Parivesh";
+                break;
+            case "page12":
+                event="Short_Film_Contest";
+                break;
+            case "page13":
+                event="Photography_Contest";
+                break;
+
+            case "page14":
+                event="Open_Mic";
+                break;
+            case "page15":
+                event="Poetry_Slam";
+                break;
+             case "page16":
+                event="Nukkad_Natak";
+                break;
+
+            case "page17":
+                event="On_Spot_Painting";
+                break;
+            case "page18":
+                event="ComicStrip";
+                break;
+
+        }
+        window.location.replace("http://localhost:8000/Events/"+event+"/");
+
+    });
+</script>
 </html>

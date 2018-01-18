@@ -12,7 +12,7 @@ body{
     top: 0;
     right: 0;
     background-image: url("../img/navbar.png");
-    background-position: center;
+    background-position: top left;
     overflowy: hidden;
     transition: 0.8s;
     padding: 2.5em 0 1.2em 0;

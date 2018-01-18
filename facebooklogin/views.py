@@ -2,8 +2,11 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.conf import settings
+from .forms import UserForm
 from .models import *
+
 # Create your views here.
+
 
 def indexView(request):
     reg="Register"
@@ -14,6 +17,9 @@ def indexView(request):
 
 def eventMenu(request):
     return render(request,'facebooklogin/eventMenu.html')
+
+def gallery(request):
+    return render(request,'facebooklogin/imageGallery.html')
 
 def about(request):
     return render(request,'facebooklogin/about.html')
@@ -32,9 +38,12 @@ def managerial_events(request):
 
 @login_required
 def eventTeamView(request,eventName):
-    s = eventName + ";"
-    user=UserProfile.objects.get(user=request.user)
+    s = eventName+";"
 
+    try:
+        user=UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        return redirect('/CreateProfile/')
     if s in user.eventsPending or s in user.eventsPaid:
         return redirect('/Profile/')
     else:
@@ -48,7 +57,12 @@ def eventTeamView(request,eventName):
 
 @login_required
 def profile(request):
-    user = UserProfile.objects.get(user=request.user)
+    try:
+        user=UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        return redirect('/CreateProfile/')
+
+
     unpaid_events=user.eventsPending.split(";")
     unpaid_events.pop(-1)
     paid_events=user.eventsPaid.split(";")
@@ -59,7 +73,10 @@ def profile(request):
 @login_required
 def updateUserEvents(request,eventname):
     s = eventname + ";"
-    user = UserProfile.objects.get(user=request.user)
+    try:
+        user=UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        return redirect('/CreateProfile/')
 
     event = Events.objects.get(name=eventname)
     message=""
@@ -86,10 +103,14 @@ def updateUserEvents(request,eventname):
 
 @login_required
 def removeEvents(request):
+    try:
+        user=UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        return redirect('/CreateProfile/')
     data=request.POST
 
     events=data.getlist('events')
-    user = UserProfile.objects.get(user=request.user)
+
     string=""
     for x in events:
         string=string+x+";"
@@ -101,3 +122,17 @@ def removeEvents(request):
     user.unpaidAmount=user.unpaidAmount-feededuction
     user.save()
     return redirect('/Profile/')
+
+@login_required
+def createprofile(request):
+    if request.method=='POST':
+
+        form=UserForm(request.POST)
+        if form.is_valid():
+            new_user_form=form.save(commit=False)
+            new_user_form.user=request.user
+            new_user_form.save()
+            return redirect('/Profile/')
+    else:
+        form=UserForm()
+    return render(request,'facebooklogin/createuser.html',{'form':form})

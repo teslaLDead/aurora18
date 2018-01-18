@@ -74,23 +74,17 @@ $(window).scroll(function(){
     'transform':'translate(0px, '+ (wScroll/1.005) +'px) scale('+(1+wScroll/80000) +')'
   });
   $('#mountain0').css({
-    'transform':'translate(0px, '+ wScroll/1.0005 +'px)  scale('+(1+wScroll/45000) +')'
+    'transform':' scale('+(1+wScroll/150000) +')'
   });
   $('#mountain1').css({
     'transform':'translate(0px, '+ wScroll/1.008 +'px)'
   });
-   $('#mountain2').css({
-    'transform':'scale('+(1+wScroll/60000) +') '
-  });
-   $('#mountain3').css({
-    'transform':'translate(0px, -'+ wScroll/180 +'px)  scale('+(1+wScroll/85000) +') '
-  });
+
+
    $('#mountain3-reflection').css({
     'transform':'translate(0px, '+ ''+wScroll/1.003 +'px)'
   });
-   $('#river').css({
-    'transform':'translate(0px, '+ wScroll/1.0055 +'px) '
-  });
+
     }
     if (wScroll<=4000){
         $('#logo').css({

@@ -558,7 +558,7 @@
 
       </span><span>LOGIN</span></a>
         {% endif %}
-  <a href="#"><span >
+  <a href="{% url 'gallery' %}" target="_blank"><span >
       <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1241,7 +1241,7 @@ Prepare your bits of paper and pen and get ready to show the world some of the b
         <script src="/static/aurora18/js/function.js"></script>
 	</body>
 <script>
-    $('#registerButton').click(function () {
+    $('#registerButton,#registerButton2').click(function () {
         var page=$('.pt-page-current').attr('id');
         var event=""
         switch (page){

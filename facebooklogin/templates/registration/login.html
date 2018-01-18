@@ -1,14 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Login - Aurora'18</title>
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
+    <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <!--link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css"-->
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/home.css">
     <style>
@@ -17,7 +19,7 @@
         }
         body{
             background-image: url("/static/aurora18/img/event page back-01.png");
-            background-position: center;
+            background-position: left;
         }
         .container{
             top:20%;
@@ -32,7 +34,7 @@
         p{
             margin: 2em 0 2em 0;
             font-size: 1.5rem;
-            font-family: Raleway  ;
+            font-family: 'Raleway', sans-serif;
         }
        #fbbutton{
             text-decoration: none;
@@ -63,8 +65,8 @@
     <!-- NAV BAR BUTTON END-->
     <div id="mySidenav" class="sidenav">
 
-  <a href="about.html">
-      <span >
+  <a href="{% url 'about' %}">
+      <span>
           <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -374,7 +376,8 @@
 
 
       </span><span>TEAM</span></a>
-  <a href="{% url 'login' %}"><span >
+  {% if user.is_authenticated %}
+        <a href="{% url 'profile' %}"><span >
         <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -474,7 +477,110 @@
 </g>
 </svg>
 
-      </span><span>{{ reg }}</span></a>
+      </span><span>PROFILE</span></a>
+        {% else %}
+        <a href="{% url 'login' %}"><span >
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="nav-icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M159.738,133.697c-23.207,0-42.088,18.88-42.088,42.087c0,23.207,18.881,42.087,42.088,42.087
+			c23.206,0,42.086-18.88,42.086-42.087C201.824,152.577,182.944,133.697,159.738,133.697z M159.738,197.871
+			c-12.179,0-22.088-9.908-22.088-22.087s9.909-22.087,22.088-22.087c12.178,0,22.086,9.908,22.086,22.087
+			S171.916,197.871,159.738,197.871z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M352.26,133.697c-23.206,0-42.086,18.88-42.086,42.087c0,23.207,18.88,42.087,42.086,42.087
+			c23.208,0,42.088-18.88,42.088-42.087S375.467,133.697,352.26,133.697z M352.26,197.871c-12.178,0-22.086-9.908-22.086-22.087
+			s9.908-22.087,22.086-22.087c12.179,0,22.088,9.908,22.088,22.087C374.348,187.962,364.439,197.871,352.26,197.871z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M485.999,31.393V10c0-5.522-4.477-10-10-10h-440c-5.523,0-10,4.478-10,10v21.393c0,15.982,12.01,29.205,27.479,31.138
+			v209.495c0,0.011,0,0.021,0,0.031v16.981c-15.468,1.933-27.479,15.155-27.479,31.139v21.391c0,5.523,4.477,10,10,10H46v23.416
+			h-9.998c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H46v23h-9.998c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H46V492
+			h-7.033c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10c0.007,0,434.06,0,434.066,0c5.523,0,10-4.478,10-10
+			c0-5.522-4.477-10-10-10H466v-54.016h9.999c5.523,0,10-4.478,10-10c0-5.522-4.477-10-10-10H466v-23h9.999c5.523,0,10-4.478,10-10
+			c0-5.522-4.477-10-10-10H466v-23.416h9.999c5.523,0,10-4.477,10-10v-21.391c0-15.983-12.01-29.206-27.477-31.139V62.531
+			C473.989,60.598,485.999,47.376,485.999,31.393z M446,492H66v-54.016h380V492z M446,417.984H66v-23h380V417.984z M446,374.984H66
+			v-23.415h380V374.984z M465.999,320.178v11.391h-420v-11.391c0-6.281,5.11-11.392,11.392-11.392h397.217
+			C460.889,308.786,465.999,313.896,465.999,320.178z M98.91,236.611c-3.905-3.906-10.237-3.905-14.142-0.001l-11.29,11.289V62.785
+			h90.75l-20.821,20.821c-3.905,3.905-3.905,10.237,0.001,14.143c1.953,1.952,4.512,2.929,7.071,2.929s5.119-0.977,7.071-2.929
+			l34.963-34.964H246v226h-44.176v-11.392c0-17.309-14.082-31.391-31.391-31.391h-21.391c-17.31,0-31.393,14.082-31.393,31.391
+			v11.392H73.478v-12.602l25.431-25.43C102.815,246.849,102.815,240.517,98.91,236.611z M181.825,277.393v11.392h-0.001H137.65
+			v-11.392c0-6.281,5.111-11.391,11.393-11.391h21.391C176.715,266.002,181.825,271.111,181.825,277.393z M289.452,238.589
+			c-3.905-3.904-10.236-3.904-14.142,0l-9.31,9.31V62.785h158.379l-19.989,19.99c-3.905,3.905-3.905,10.237,0,14.143
+			c1.953,1.952,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l19.99-19.99v211.857h-44.174v-11.392
+			c0-17.309-14.082-31.391-31.392-31.391h-21.391c-17.31,0-31.392,14.082-31.392,31.391v11.392H266v-12.601l23.452-23.452
+			C293.357,248.827,293.357,242.495,289.452,238.589z M374.349,277.393v11.392h-0.001h-44.174v-11.392
+			c0-6.281,5.11-11.391,11.392-11.391h21.391C369.238,266.002,374.349,271.111,374.349,277.393z M454.608,42.784H57.391
+			c-6.281,0-11.392-5.109-11.392-11.391V20h420v11.393C465.999,37.674,460.889,42.784,454.608,42.784z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M398.606,102.701c-3.905-3.905-10.236-3.905-14.142,0l-0.277,0.277c-3.905,3.905-3.905,10.237,0,14.143
+			c1.953,1.952,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l0.277-0.277C402.511,112.939,402.511,106.607,398.606,102.701z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M119.383,216.135c-3.905-3.904-10.236-3.904-14.142,0l-0.277,0.277c-3.905,3.905-3.905,10.237,0,14.143
+			c1.953,1.952,4.512,2.929,7.071,2.929c2.559,0,5.118-0.977,7.071-2.929l0.277-0.277
+			C123.288,226.373,123.288,220.041,119.383,216.135z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M10.236,492H10c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h0.236c5.523,0,10-4.478,10-10
+			C20.236,496.477,15.759,492,10.236,492z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M502,492h-0.236c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10H502c5.523,0,10-4.478,10-10
+			C512,496.477,507.523,492,502,492z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+      </span><span>LOGIN</span></a>
+        {% endif %}
   <a href="#"><span >
       <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -567,6 +673,11 @@
 </svg>
 
       </span><span>GALLERY</span></a>
+        <div id="help">
+            <span><a href="https://www.facebook.com/auroraiiitm/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+            <span><a href="https://www.facebook.com/auroraiiitm/videos/1508292579282663/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
+            <span><a href="mailto:aurora2k18.iiitm@gmail.com?subject=I%20Need%20Help"><i class="fa fa-question" aria-hidden="true"></i></a></span>
+        </div>
     </div>
 
 </div>

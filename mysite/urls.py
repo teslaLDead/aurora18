@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',auth_views.login,name='login'),
 
-    path('',include('facebooklogin.urls'),name='home'),
-    url('oauth/',include('social_django.urls'),name='social'),
+    path('', include('facebooklogin.urls'), name='home'),
+    url('oauth/', include('social_django.urls'), name='social'),
     path('accounts/', include('django.contrib.auth.urls')),
 ]

@@ -1331,11 +1331,12 @@ position: absolute;z-index: -1;opacity: 0.1;font-size: 13em;
 
 }
 #openmenu{
+	text-align: center;
 	position: fixed;
 	color: white;
 	width: 10%;
-	right: 2em;
-	bottom: 20%;
+	right: 1em;
+	top: 68%;
 
 	z-index: 100;
 }

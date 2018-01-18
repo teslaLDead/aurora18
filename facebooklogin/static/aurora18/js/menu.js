@@ -20,14 +20,14 @@ $(window).scroll(function () {
 
     var wScroll=$(this).scrollTop();
     console.log(wScroll)
-    if(wScroll>=1000 && wScroll<2000 ){
+    if(wScroll>=500 && wScroll<800 ){
         $('#mainBack').css({
         'transform':'translate('+'-'+widthSize+'px, 0px)'
     });
     }
 
 
-    else if(wScroll>=2000 && wScroll<3000){
+    else if(wScroll>=800 ){
         $('#mainBack').css({
         'transform':'translate('+'-'+widthSize*2+'px, 0px)'
     });

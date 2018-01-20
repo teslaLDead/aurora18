@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/views.py" afterPath="$PROJECT_DIR$/facebooklogin/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="culturalEvent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/culturalEvent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36689">
-              <caret line="1931" column="8" lean-forward="false" selection-start-line="1931" selection-start-column="8" selection-end-line="1931" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="managerialEvents.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/managerialEvents.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,13 +58,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teampage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="teampage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
               <caret line="706" column="41" lean-forward="true" selection-start-line="706" selection-start-column="41" selection-end-line="706" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/facebooklogin/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="131" column="12" lean-forward="true" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,7 +188,6 @@
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/facebooklogin/urls.py" />
-        <option value="$PROJECT_DIR$/facebooklogin/views.py" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/css/image_gallery.css" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/profile.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/imageGallery.html" />
@@ -204,6 +205,7 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/views.py" />
       </list>
     </option>
   </component>
@@ -615,16 +617,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/eventCategory.html" />
-    <entry file="file://$PROJECT_DIR$/facebooklogin/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="29" column="14" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/aurora18/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -786,6 +778,16 @@
           <caret line="706" column="41" lean-forward="true" selection-start-line="706" selection-start-column="41" selection-end-line="706" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="131" column="12" lean-forward="true" selection-start-line="131" selection-start-column="12" selection-end-line="131" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

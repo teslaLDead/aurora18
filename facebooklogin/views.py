@@ -125,6 +125,11 @@ def removeEvents(request):
 
 @login_required
 def createprofile(request):
+    try:
+        user=UserProfile.objects.get(user=request.user)
+        return redirect('/Profile/')
+    except UserProfile.DoesNotExist:
+        pass
     if request.method=='POST':
 
         form=UserForm(request.POST)

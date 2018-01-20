@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
     <title>About Aurora' 18</title>
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
 
@@ -14,31 +14,115 @@
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/home.css">
 </head>
 <style>
+    html{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
     body{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
         background: #246faf;
+        background-image: url("/static/aurora18/img/about back-01.png");
+        background-position: center right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         color: white;
+        background-size:cover ;
     }
 
     br{
         margin-bottom: 2em;
     }
     h1{
-        margin-top: 0.7em;
+
         font-family: Lobster;
-        font-size: 5em;
-        text-align: center;
+        font-size: 8em;
+
     }
     h2{
         font-family: 'Engagement', cursive;
         font-size: 3.5em;
-        text-align: center;
     }
+
     p{
+        font-family: 'Raleway', sans-serif;
+        width: 50%;
         margin: 2em 1em 2em 1em;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
+    .col-12{
+        top: 20%;
+    }
+    #scroll{
+        transition: all 1s;
+        height: 100%;
+        overflow-y: hidden;
+        padding: 2em 5em 2em 4em;
+    }
+    .row{
+        height: 100%;
+        transition: all 1.5s;
+        position: relative;
+
+    }
+    #scrollnav{
+        position: absolute;
+        left: 20px;
+        height: 120px;
+        margin-top: -60px;
+        top:50%;
+    }
+    .navdots{
+        margin: 6px 0 0 0;
+    }
+    .navdots svg{
+        height: 24px;
+        width: 24px;
+        fill: white;
+    }
+
+    .active{
+        opacity: 1;
+    }
+    g path{
+        transition: all 1s;
+    }
+
+
+    @media screen and (max-device-width: 1024px){
+        body{
+            background-position: center left;
+            font-size: 1.7em;
+        }
+        p{
+            width: 100%;
+
+        }
+        .col-12{
+            top: 5%;
+        }
+    }
+    @media screen and (min-width: 1280px){
+        .col-12{
+            top: 5%;
+        }
+    }
+    @media screen and (min-width: 1920px){
+        .col-12{
+            top: 20%;
+        }
+        p{
+            font-size: 1.7em;
+        }
+    }
+    #d1,#d2,#d3,#d4{
+        cursor:pointer ;
+    }
+
 </style>
-<body>
+<body style="overflow-y: hidden">
 
 <!-- NAV BAR -->
 <div id="sidenav">
@@ -675,62 +759,456 @@
 
 </div>
 <!-- NAV BAR END-->
-<div class="container">
-    <dic class="row">
+<div  id="scroll">
+    <div class="row">
         <div class="col-12">
             <h1>Aurora 18</h1>
             <h2>Ensnaring The Senses</h2>
         </div>
-    </dic>
-    <dic class="row">
+    </div>
+    <div class="row">
         <div class="col-12">
+            <h2>What is Aurora 18?</h2>
             <p>
-                Stories are a part and parcel of our lives. The tales and folklores play a vital role in
+                 AURORA gets its name from Aurora- a natural electrical phenomenon characterized by the appearance of streamers of reddish or greenish light in the sky, especially near the northern or southern magnetic pole called aurora borealis or aurora australis. Aurora dovetails all the different colors and flavors of India together in one place and makes the colors come alive with its jinx, casting a spell on the audience. “Aurora” the cultural fest of ABV-IIITM Gwalior has set its benchmark amidst all the cultural fests of India witnessing a ginormous participation of over 40k+ students from the various corners of India and an exuberant audience crossing over half a lakh.
+
+
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Dates?</h2>
+
+            <p>
+               AURORA`18 is ready to bewitch the hearts of the masses with an idiosyncratic blend of shimmer, mystique, stupendous talent, breathtaking performances, enrapturing panache , unnerving bands, aesthetic dance moves, soulful voices, top-notch art & sublime actors from<strong> 20th - 22nd February-2018</strong>.
+
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+
+            <h2>Tales Through The Ages</h2>
+            <p>
+            Stories are a part and parcel of our lives. The tales and folklores play a vital role in
 shaping individual lives and social outcomes. Aurora, the annual techno-cultural-
 managerial fest of Atal Bihari Vajpayee Indian Institute of Information Technology
 and Management, Gwalior, aspires to celebrate the tales told and heard through
 the ages, and rejuvenate their spirit and sense to reinforce the advancements in
 technology, management and social sciences, as well provide an escapade with a
 world of delight and amusement.
-Aurora takes pride in being the only fest of its kind which fosters a link between
-the past and the future, an extravaganza that celebrates technology and culture
-together from the same stage. From cities like Ayodhya and Troy of mythological
-importance to the smart, intelligently planned and managed cities of the future,
-from the Pushpak Vimana mentioned in the Ramanyana to the ambitious
-Hyperloop One, all have got due commemoration and deliberation in our events
-and activities.<br/><br/>
-The concept of smart cities has been a milestone in the human history in terms of
-revolutionizing the way we have lived on this planet and interacted with the
-various resources. This fest will serve as a platform to bring out innovative ideas
-that can be used in smart cities. According to the hour’s need the city must be
-designed to catter the needs of the increasing population of cities. It not just only
-about free WiFi but also planning the city in such a way that their in efficient ways
-                to control road traffic and other such issues.<br/><br/>
-The tales are a reflection of the society. Social issues have been majorly
-highlighted in stories of all times. The recent times have discerned a well-
-developed mechanism of battling the social issues through leadership and
-enterprising. Social entrepreneurship assumes the responsibility of not just
 
-creating products and services but creating peaceful and sustainable societies as
-well.<br/><br/>
-This time Aurora has gone beyond the conventional activities and introduced
-special events that promote women entrepreneurship. There have been
-innumerable female characters who broke the established norms and dared to
-challenge the male domination in the society.
-Stories are inscribed in the fabric of our social lives. Aurora aims to celebrate the
-tales through the ages and gain lessons worthwhile to redefine living in the
-modern world. Our planet is plagued with a number of hazards and issues.
-Aurora considers it a responsibility to engage in a process of alleviating these, and
-celebrate the colors of life, culture and heritage while advancing rapidly and
-consistently.
             </p>
         </div>
-    </dic>
+    </div>
+
+</div>
+<div id="scrollnav">
+    <div id="d1" class="navdots">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path id="dot1"  d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+			c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+			c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+			s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+			C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.633-56.527,56.534
+			c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.901-42.633-32.743-56.527-56.534
+			c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53
+			c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53
+			c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z"/>
+		<path  d="M219.27,146.178c-20.177,0-37.401,7.139-51.678,21.411c-14.272,14.277-21.411,31.501-21.411,51.678
+			c0,20.175,7.135,37.402,21.411,51.673c14.277,14.277,31.504,21.416,51.678,21.416c20.179,0,37.406-7.139,51.676-21.416
+			c14.274-14.271,21.413-31.498,21.413-51.673c0-20.177-7.139-37.401-21.413-51.678C256.676,153.316,239.449,146.178,219.27,146.178
+			z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </div>
+    <div id="d2" class="navdots">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path id="dot2" d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+			c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+			c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+			s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+			C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.633-56.527,56.534
+			c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.901-42.633-32.743-56.527-56.534
+			c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53
+			c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53
+			c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z"/>
+		<path d="M219.27,146.178c-20.177,0-37.401,7.139-51.678,21.411c-14.272,14.277-21.411,31.501-21.411,51.678
+			c0,20.175,7.135,37.402,21.411,51.673c14.277,14.277,31.504,21.416,51.678,21.416c20.179,0,37.406-7.139,51.676-21.416
+			c14.274-14.271,21.413-31.498,21.413-51.673c0-20.177-7.139-37.401-21.413-51.678C256.676,153.316,239.449,146.178,219.27,146.178
+			z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </div>
+    <div id="d3" class="navdots">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path id="dot3" d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+			c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+			c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+			s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+			C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.633-56.527,56.534
+			c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.901-42.633-32.743-56.527-56.534
+			c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53
+			c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53
+			c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z"/>
+		<path d="M219.27,146.178c-20.177,0-37.401,7.139-51.678,21.411c-14.272,14.277-21.411,31.501-21.411,51.678
+			c0,20.175,7.135,37.402,21.411,51.673c14.277,14.277,31.504,21.416,51.678,21.416c20.179,0,37.406-7.139,51.676-21.416
+			c14.274-14.271,21.413-31.498,21.413-51.673c0-20.177-7.139-37.401-21.413-51.678C256.676,153.316,239.449,146.178,219.27,146.178
+			z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </div>
+    <div id="d4" class="navdots">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="438.533px" height="438.533px" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;"
+	 xml:space="preserve">
+<g>
+	<g>
+		<path id="dot4" d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+			c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+			c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+			s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+			C438.533,179.485,428.732,142.795,409.133,109.203z M353.742,297.208c-13.894,23.791-32.736,42.633-56.527,56.534
+			c-23.791,13.894-49.771,20.834-77.945,20.834c-28.167,0-54.149-6.94-77.943-20.834c-23.791-13.901-42.633-32.743-56.527-56.534
+			c-13.897-23.791-20.843-49.772-20.843-77.941c0-28.171,6.949-54.152,20.843-77.943c13.891-23.791,32.738-42.637,56.527-56.53
+			c23.791-13.895,49.772-20.84,77.943-20.84c28.173,0,54.154,6.945,77.945,20.84c23.791,13.894,42.634,32.739,56.527,56.53
+			c13.895,23.791,20.838,49.772,20.838,77.943C374.58,247.436,367.637,273.417,353.742,297.208z"/>
+		<path d="M219.27,146.178c-20.177,0-37.401,7.139-51.678,21.411c-14.272,14.277-21.411,31.501-21.411,51.678
+			c0,20.175,7.135,37.402,21.411,51.673c14.277,14.277,31.504,21.416,51.678,21.416c20.179,0,37.406-7.139,51.676-21.416
+			c14.274-14.271,21.413-31.498,21.413-51.673c0-20.177-7.139-37.401-21.413-51.678C256.676,153.316,239.449,146.178,219.27,146.178
+			z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+    </div>
 </div>
 </body>
- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="/static/aurora18/js/function.js"></script>
-<script src="https://use.fontawesome.com/d2e03493c3.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/d2e03493c3.js"></script>
+    <script type="text/javascript" src="/static/aurora18/js/jquery-mousewheel-3.0.4/jquery.mousewheel.min.js"></script>
+
+<script>
+    var count=0;
+    $(document).mousewheel(function(e, delta) {
+
+						if(delta > 0)
+                                {
+                                    if(count>0)
+                                        count--;
+							}
+						else{
+						    count++;
+                        }
+                        switch (count){
+                            case 0:
+                                $('.row').css({
+                                    'transform':'translateY(0)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                break;
+                            case 1:
+                                $('.row').css({
+                                    'transform':'translateY(-100%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                break;
+                            case 2:
+                                $('.row').css({
+                                    'transform':'translateY(-200%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                break;
+                                case 3:
+                                $('.row').css({
+                                    'transform':'translateY(-300%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'1'
+                                });
+
+                                break;
+                        }
+
+					});
+    $(document).ready(function () {
+                                $('#dot1').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                $('#d1').click(function () {
+                                    $('.row').css({
+                                    'transform':'translateY(0)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                });
+                                $('#d2').click(function () {
+                                 $('.row').css({
+                                    'transform':'translateY(-100%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                });
+                                $('#d3').click(function () {
+                                   $('.row').css({
+                                    'transform':'translateY(-200%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'1'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'0'
+                                });
+                                });
+                                $('#d4').click(function () {
+                                   $('.row').css({
+                                    'transform':'translateY(-300%)'
+                            });
+                                $('#dot1').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot2').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot3').css({
+                                    'opacity':'0'
+                                });
+                                $('#dot4').css({
+                                    'opacity':'1'
+                                });
+                                });
+    })
+</script>
 </html>

@@ -6,6 +6,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 $(window).scroll(function(){
   var wScroll=$(this).scrollTop();
     console.log(wScroll);
+    $('#home-scroll-down').css({'opacity':0});
     if(wScroll>=5000){
 
             $('#text > p:nth-child(1)').css({'opacity':1});

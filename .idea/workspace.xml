@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0098f3a5-bc0c-4f82-bc12-9fa690de7ee8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" afterPath="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createuser.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createuser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -69,12 +68,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teampage.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="teampage.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13395">
-              <caret line="705" column="53" lean-forward="false" selection-start-line="705" selection-start-column="53" selection-end-line="705" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="301">
+              <caret line="706" column="41" lean-forward="true" selection-start-line="706" selection-start-column="41" selection-end-line="706" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -200,9 +201,9 @@
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/techEvent.html" />
         <option value="$PROJECT_DIR$/facebooklogin/static/aurora18/js/function.js" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/index.html" />
-        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html" />
         <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/createuser.html" />
+        <option value="$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html" />
       </list>
     </option>
   </component>
@@ -466,7 +467,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12312">
           <caret line="648" column="0" lean-forward="true" selection-start-line="648" selection-start-column="0" selection-end-line="648" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -759,14 +762,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13395">
-          <caret line="705" column="53" lean-forward="false" selection-start-line="705" selection-start-column="53" selection-end-line="705" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -782,6 +777,16 @@
         <state relative-caret-position="361">
           <caret line="691" column="30" lean-forward="false" selection-start-line="691" selection-start-column="30" selection-end-line="691" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebooklogin/templates/facebooklogin/teampage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="706" column="41" lean-forward="true" selection-start-line="706" selection-start-column="41" selection-end-line="706" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

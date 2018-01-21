@@ -6,16 +6,24 @@
     <title>Aurora 2018 -Events</title>
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
-     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/bootstrap.css">
+
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/menu.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/static/aurora18/css/bootstrap-grid.css">
-        <link rel="stylesheet" type="text/css" href="/static/aurora18/css/bootstrap-reboot.css">
-     <script src="/static/aurora18/js/bootstrap.js"></script>
-    <script src="/static/aurora18/js/jquery-3.2.1.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta name="description" content="Aurora 2018, ABV-IIITM Gwalior Techno cultural fest in February, Gwalior">
+    <meta name="keyword" content="cultural, technical, managerial, fest, concert, college fest, abv iiitm gwalior, iiit, gwalior, iiitm, 40 plus events, competitions, college, gwalior, events, footfall, movie, pro nights, madhya pradesh, india, sponsor">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Paritosh Kumar, kumar.paritosh20@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="/static/aurora18/js/menu.js"></script>
      <script src="/static/aurora18/js/function.js"></script>
 <style>
+    html,body{
+        overflow-y: hidden;
+    }
     #nav-icon4 span{
         background: #2b2b2be0;
     }
@@ -27,9 +35,32 @@
         right: 100px;
         opacity: 0;
     }
+    #instruction{
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        display: grid;
+        z-index: 1000;
+        background: #0009;
+        background-image: url("/static/aurora18/img/swipe instruction.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        transition:all 1s;
+
+        color: white;
+    }
+    #instruction h2{
+        font-size: 2em;
+        margin-top: 2em;
+    }
 </style>
 </head>
 <body>
+<div id="instruction">
+    <h2>Click and swipe to move</h2>
+</div>
 <!-- NAV BAR -->
 <div id="sidenav">
     <!-- NAV BAR BUTTON -->
@@ -653,6 +684,79 @@
     </div>
 
 </div>
+<style>
+
+</style>
 <script src="https://use.fontawesome.com/d2e03493c3.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
+		 <script type="text/javascript" src="/static/aurora18/js/jquery-mousewheel-3.0.4/jquery.mousewheel.min.js"></script>
 </body>
+<script>
+    $(document).ready(function () {
+        $('#instruction').click(function () {
+
+            $(this).fadeOut("slow");
+        });
+
+
+    });
+    var widthSize=$('body').width();
+
+    var swipes=0;
+    $(document).swipeleft(function(){
+        $('#instruction').fadeOut("slow");
+        if (swipes<=2)
+        {swipes++;
+             switch (swipes){
+            case 0:
+                 $('#mainBack').css({
+        'transform':'translateX(0px)'
+    });
+                 break;
+            case 1:
+                 $('#mainBack').css({
+        'transform':'translateX(-'+widthSize+'px)'
+    });
+                break;
+                 case 2:
+                $('#mainBack').css({
+        'transform':'translateX(-'+widthSize*2+'px)'
+    });
+                break;
+        }
+
+
+        }
+
+    });
+    $(document).swiperight(function(){
+        $('#instruction').fadeOut("slow");
+        if (swipes>0)
+        {swipes--;
+        switch (swipes){
+            case 0:
+                 $('#mainBack').css({
+        'transform':'translateX(0px)'
+    });
+                 break;
+            case 1:
+                 $('#mainBack').css({
+        'transform':'translateX(-'+widthSize+'px)'
+    });
+                break;
+                 case 2:
+                $('#mainBack').css({
+        'transform':'translateX(-'+widthSize*2+'px)'
+    });
+                break;
+        }
+        }
+
+    });
+
+
+</script>
 </html>

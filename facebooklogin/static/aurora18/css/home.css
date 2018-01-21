@@ -166,12 +166,12 @@
 }
 #logo{
     position: fixed;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 50%;
-    left: -100px;
+    left: -125px;
     background-image: url("../img/aruroa 18 banner.png");
     z-index: 99;
     top:20px;

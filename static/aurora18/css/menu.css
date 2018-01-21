@@ -22,20 +22,24 @@
 
             background-position: center;
             background-repeat: no-repeat;
+            background-size: cover;
         }
 
-       @media screen and (min-width: 800px) {
+       @media only screen and (max-device-width: 800px ) and (min-device-width: 300px) {
+           #technical,#managerial,#cultural{
+               -moz-background-size: contain;
+           }
 	    #technical {
-		background-image: url("../img/rocketart-low.png");
+		background-image: url("../img/mobile-technical.png");
 	    }
-           #cultural{
-               background-image: url("../img/cultural-low.png");
+            #cultural{
+               background-image: url("../img/mobile-cultural.png");
            }
-           #managerial{
-               background-image: url("../img/managerial-low.png");
-           }
+            #managerial{
+                background-image: url("../img/mobile-managerial.png");
+            }
         }
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1024px) {
 	    #technical {
 		background-image: url("../img/rocketart-med.png");
 	    }

@@ -11,6 +11,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
+    background: #fffaee;
     background-image: url("../img/navbar.png");
     background-position: top left;
     overflowy: hidden;
@@ -182,3 +183,8 @@ body{
     color: #272727;
     text-decoration: none;
 }
+ @media screen and (max-width: 980px) {
+     .sidenav a{
+          padding: 0em;
+     }
+ }

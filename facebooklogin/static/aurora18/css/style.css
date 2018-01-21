@@ -182,3 +182,8 @@ body{
     color: #272727;
     text-decoration: none;
 }
+ @media screen and (max-width: 980px) {
+     .sidenav a{
+          padding: 0em;
+     }
+ }

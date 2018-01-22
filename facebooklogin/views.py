@@ -36,6 +36,16 @@ def cultural_events(request):
 def managerial_events(request):
     return render(request,'facebooklogin/managerialEvents.html')
 
+def tech_events_specific(request,eventName):
+    return render(request,'facebooklogin/techEvent.html',{'event':eventName})
+
+def cultural_events_specific(request,eventName):
+    return render(request,'facebooklogin/culturalEvent.html',{'event':eventName})
+
+def managerial_events_specific(request,eventName):
+    return render(request,'facebooklogin/managerialEvents.html',{'event':eventName})
+
+
 @login_required
 def eventTeamView(request,eventName):
     s = eventName+";"

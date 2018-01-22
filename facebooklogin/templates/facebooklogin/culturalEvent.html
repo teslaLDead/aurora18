@@ -2127,6 +2127,75 @@
         <script src="/static/aurora18/js/function.js"></script>
 	</body>
 <script>
+    $(document).ready(function () {
+        var event="{{ event }}";
+        switch (event){
+            case "corna":
+                $('#page1').removeClass('pt-page-current');
+                $('#page1').addClass('pt-page-current');
+                break;
+                case "Dubsmash":
+                $('#page1').removeClass('pt-page-current');
+                $('#page2').addClass('pt-page-current');
+                break;
+                case "le_art_fiesta":
+                $('#page1').removeClass('pt-page-current');
+                $('#page3').addClass('pt-page-current');
+                break;
+                case "Dancing_Mantra":
+                $('#page1').removeClass('pt-page-current');
+                $('#page4').addClass('pt-page-current');
+                break;
+                case "Dancing_Duo":
+                $('#page1').removeClass('pt-page-current');
+                $('#page5').addClass('pt-page-current');
+                break;
+                case "SYNCHRO_FUNK":
+                $('#page1').removeClass('pt-page-current');
+                $('#page6').addClass('pt-page-current');
+                break;
+                case "Aurora_idol":
+                $('#page1').removeClass('pt-page-current');
+                $('#page7').addClass('pt-page-current');
+                break;
+                case "MnM":
+                $('#page1').removeClass('pt-page-current');
+                $('#page8').addClass('pt-page-current');
+                break;
+                case "ACOUSTICS":
+                $('#page1').removeClass('pt-page-current');
+                $('#page9').addClass('pt-page-current');
+                break;
+                case "DJ_wars":
+                $('#page1').removeClass('pt-page-current');
+                $('#page10').addClass('pt-page-current');
+                break;
+                case "Parivesh":
+                $('#page1').removeClass('pt-page-current');
+                $('#page11').addClass('pt-page-current');
+                break;
+                case "Short_Film_Contest":
+                $('#page1').removeClass('pt-page-current');
+                $('#page12').addClass('pt-page-current');
+                break;
+                case "Photography_Contest":
+                $('#page1').removeClass('pt-page-current');
+                $('#page13').addClass('pt-page-current');
+                break;
+                case "Open_Mic":
+                $('#page1').removeClass('pt-page-current');
+                $('#page14').addClass('pt-page-current');
+                break;
+                case "Poetry_Slam":
+                $('#page1').removeClass('pt-page-current');
+                $('#page15').addClass('pt-page-current');
+                break;
+                case "Nukkad_Natak":
+                $('#page1').removeClass('pt-page-current');
+                $('#page16').addClass('pt-page-current');
+                break;
+        }
+    });
     $('#registerButton,#registerButton2').click(function () {
         var page=$('.pt-page-current').attr('id');
         var event=""

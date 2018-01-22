@@ -1087,6 +1087,27 @@
         <script src="/static/aurora18/js/function.js"></script>
 	</body>
 <script>
+    $(document).ready(function () {
+        var event="{{ event }}";
+        switch (event){
+            case "big_discussion":
+                $('#page1').removeClass('pt-page-current');
+                $('#page1').addClass('pt-page-current');
+                break;
+                case "powergal":
+                $('#page1').removeClass('pt-page-current');
+                $('#page2').addClass('pt-page-current');
+                break;
+                case "pinnacle":
+                $('#page1').removeClass('pt-page-current');
+                $('#page3').addClass('pt-page-current');
+                break;
+                case "brandsome":
+                $('#page1').removeClass('pt-page-current');
+                $('#page4').addClass('pt-page-current');
+                break;
+        }
+    });
     $('#registerButton,#registerButton2').click(function () {
         var page=$('.pt-page-current').attr('id');
         var event=""

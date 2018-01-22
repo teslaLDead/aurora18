@@ -1244,6 +1244,40 @@ Prepare your bits of paper and pen and get ready to show the world some of the b
 
 	</body>
 <script>
+    $(document).ready(function () {
+        var event="{{ event }}";
+        switch (event){
+                case "code_conquest":
+                $('#page1').removeClass('pt-page-current');
+                $('#page1').addClass('pt-page-current');
+                break;
+                case "hackathon":
+                $('#page1').removeClass('pt-page-current');
+                $('#page2').addClass('pt-page-current');
+                break;
+                case "anime_and_tv_series_quiz":
+                $('#page1').removeClass('pt-page-current');
+                $('#page3').addClass('pt-page-current');
+                break;
+                case "bit_quiz":
+                $('#page1').removeClass('pt-page-current');
+                $('#page4').addClass('pt-page-current');
+                break;
+                case "language_quiz":
+                $('#page1').removeClass('pt-page-current');
+                $('#page5').addClass('pt-page-current');
+                break;
+                case "aptitude_quiz":
+                $('#page1').removeClass('pt-page-current');
+                $('#page6').addClass('pt-page-current');
+                break;
+                case "techathlon":
+                $('#page1').removeClass('pt-page-current');
+                $('#page7').addClass('pt-page-current');
+                break;
+
+        }
+    });
     $('#registerButton,#registerButton2').click(function () {
         var page=$('.pt-page-current').attr('id');
         var event=""

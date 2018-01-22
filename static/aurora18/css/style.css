@@ -68,7 +68,7 @@ body{
 #sidenav{
     position: fixed;
     right: 3.5em;
-    z-index: 100;
+    z-index: 101;
 }
 .nav-icons{
     height: 60px;

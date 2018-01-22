@@ -1306,7 +1306,7 @@
 	height: 150px;
 	width: 100%;
 	bottom: -50%;
-
+	z-index: 55;
 	background:white;
 	transition: all 0.5s;
 	display: flex;
@@ -1331,12 +1331,18 @@ position: absolute;z-index: -1;opacity: 0.1;font-size: 13em;
 
 }
 #openmenu{
-	text-align: center;
+	text-align: right;
 	position: fixed;
-	color: white;
-	width: 10%;
-	right: 1em;
+	color: black;
+	width: 20%;
+	right: 0em;
 	top: 68%;
-
+	font-size: 1.5em;
 	z-index: 100;
+	transition: all 0.5s;
+}
+#openmenu:hover{
+	font-size: 1.6em;
+	text-decoration: none;
+	color: white;
 }

@@ -60,7 +60,17 @@
                 right: 0px;
             }
     }
+    @media only screen and (min-width: 1024px){
+        .eventclick{
+            height: 100%;
+
+        }
+        .eventclick:hover{
+            background: black;
+        }
+    }
 </style>
+
 </head>
 <body>
 <div id="instruction">
@@ -764,4 +774,42 @@
 
 
 </script>
+<script>
+        $('#technical .eventclick').hover(function () {
+
+
+            $('#technical').css({
+                'transform':'scale(1.05)'
+            })
+        }, function () {
+
+             $('#technical').css({
+                'transform':'scale(1)'
+            })
+        });
+        $('#cultural .eventclick').hover(function () {
+
+
+            $('#cultural').css({
+                'transform':'scale(1.05)'
+            })
+        }, function () {
+
+             $('#cultural').css({
+                'transform':'scale(1)'
+            })
+        });
+        $('#managerial .eventclick').hover(function () {
+
+
+            $('#managerial').css({
+                'transform':'scale(1.05)'
+            })
+        }, function () {
+
+             $('#managerial').css({
+                'transform':'scale(1)'
+            })
+        });
+    </script>
 </html>

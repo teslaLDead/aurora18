@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from .forms import UserForm
 from .models import *
-
+from social_django.models import UserSocialAuth
 # Create your views here.
 
 
@@ -65,21 +65,19 @@ def eventTeamView(request,eventName):
         return render(request, 'facebooklogin/event_registration.html', {'eventName': s, 'formsize': formsize})
 
 
-@login_required
 def profile(request):
     try:
         user=UserProfile.objects.get(user=request.user)
     except UserProfile.DoesNotExist:
         return redirect('/CreateProfile/')
 
-
+    imagelink=UserSocialAuth.objects.get(user=request.user).uid
     unpaid_events=user.eventsPending.split(";")
     unpaid_events.pop(-1)
     paid_events=user.eventsPaid.split(";")
 
     payble_amount=user.unpaidAmount
-    return render(request,'facebooklogin/profile.html',{'unpaid_events':unpaid_events,'paid_events':paid_events,'payble_amount':payble_amount})
-
+    return render(request,'facebooklogin/profile.html',{'unpaid_events':unpaid_events,'paid_events':paid_events,'payble_amount':payble_amount,'imagelink':imagelink})
 @login_required
 def updateUserEvents(request,eventname):
     s = eventname + ";"

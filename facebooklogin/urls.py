@@ -16,6 +16,6 @@ urlpatterns = [
     path('Events/<str:eventname>/Update/', views.updateUserEvents, name='update_user'),
     path('CreateProfile/', views.createprofile),
     path('Profile/',views.profile,name='profile'),
-    path('Profile/removeEvents',views.removeEvents),
+    path('Profile/removeEvents/',views.removeEvents),
 
 ]

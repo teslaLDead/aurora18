@@ -38,6 +38,9 @@
             #managerial{
                 background-image: url("../img/mobile-managerial.png");
             }
+            .eventclick{
+                right: 0px;
+            }
         }
         @media screen and (min-width: 1024px) {
 	    #technical {

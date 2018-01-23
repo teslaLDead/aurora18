@@ -4,30 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile Aurora 18</title>
+    <meta name="description" content="Aurora 2018, ABV-IIITM Gwalior Techno cultural fest in February, Gwalior">
+    <meta name="keyword" content="cultural, technical, managerial, fest, concert, college fest, abv iiitm gwalior, iiit, gwalior, iiitm, 40 plus events, competitions, college, gwalior, events, footfall, movie, pro nights, madhya pradesh, india, sponsor">
+    <meta name="robots" content=" follow">
+    <meta name="author" content="Paritosh Kumar, kumar.paritosh20@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <style>
-        header{
-            margin:3em 0em 1em 0em;
+       html,body{
+           height:100%;
+
+       }
+       body{
+           background-image: url("/static/aurora18/img/810.jpg");
+       }
+        .container{
+            height: 100%;
         }
-        body{
-            background: deepskyblue;
-            color: #3e3e3e;
+        .row {
+	height: 80%;
+	position: absolute;
+	top: 10%;
+
+	width: 100%;
+	background: white;
+	padding: 1.5em 1em 1.5em 1em;
+}
+        #tabs ul {
+	list-style: none;
+	margin-top: 1em;
+	height: 100%;
+	display: grid;
+	font-size: 1.5em;
+	font-weight: bold;
+            margin-left: -5%;
+}
+        #tabs li{
+            cursor: pointer;
+            margin: 1em 0 1em 0;
+            transition: all 0.3s;
         }
-        #bottomimage{background-image: url("/static/aurora18/img/city scape.png");
-            height: 300px;
-            width: 100%;
-            position: fixed;
-            z-index: -100;
-            bottom: -5px;
-            background-position: bottom;
-            background-repeat: no-repeat;
+        #tabs li:hover{
+            font-size: 1.1em;
         }
-        #nav-icon4{
-            margin: 0;
+        #tabs li:active{
+            font-size: 1.1em;
+            color: black;
+        }
+        #tabs li:focus{
+            font-size: 1.1em;
+            color: black;
+        }
+        #tabs{
+            display: grid;
+            width: 20%;
+        }
+
+#top-info{
+    display: flex;
+    font-family: Inconsolata;
+    font-size: 1.2em;
+}
+        #top-info p{
+            margin: 2em 0 0em 1em;
+            font-size: 1.2em;
+        }
+    #tab-info{
+        width: 80%;
+        border: dashed #00000080 2px;
+        padding: 2em 1em 2em 1em;
+    }
+        #tab-info li{
+            display: inline;
+        }
+        #tab-info ul{}
+        #tab-info button{
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+        }
+        #paid-events,#notifications{
+            display:none;
         }
     </style>
 </head>
@@ -559,58 +620,77 @@
 
 </div>
 <!-- NAV BAR END-->
-<header>
+
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <div id="top-info">
+                    <img style="border-radius: 200px;border: solid 5px #6b6b6b;" src="https://graph.facebook.com/{{ imagelink }}/picture?type=large&w‌​idth=400&height400"/>
+                    <p><span style="font-size: 2em;">{{ user.first_name }} {{ user.last_name }}</span><br/>{{ user.email }} </p>
 
-                <h1>{{ user.first_name }} {{ user.last_name }}</h1>
-                <p>Registered Email - {{ user.email }}</p>
-            </div>
-        </div>
-    </div>
 
-</header>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2>Your Events</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Paid Events</h3>
-            <p>Events that you have paid for and are registered in-</p>
-            <ul>
-                {% for x in paid_events %}
-                <li>{{ x }}</li>
-                {% endfor %}
-            </ul>
-        </div>
+                </div>
+               <div style="display: flex;height: 60%;">
+                   <div id="tabs">
+                    <ul>
+                        <li id="unpaid-tab">
 
-    </div>
-    <div class="row">
+                                Unpaid Events
 
-            <div class="col-md-12">
-                <h3>Unpaid Events</h3>
-                <p>To complete registration process for the events complete payment</p>
-                <ul>
-                    {% for b in unpaid_events %}
-                        <li>{{ b }}</li>
-                    {% endfor %}
-                </ul>
-                <p>Your total event fees is {{ payble_amount }}</p>
-                <a href="mailto:">See something wrong?</a>
-                <p>Payment Gateway will be active soon. Till then please add events to your profile.<br/> You will be notified via email when payment gateway is acitve.</p>
-                <button onclick="show()">Edit Events</button>
-            </div>
-    </div>
-    <div id="removesection" class="row" style="display: none;">
-        <div class="col-12">
-            <h3>Remove Events</h3>
-        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p></p>
+                        </li>
+                        <li id="paid-tab">
 
-            <form method="post" action="removeEvents">
+                                Paid Events
+
+                        </li>
+                        <li id="notify">
+
+                                Notification
+
+                        </li>
+                    </ul>
+                    </div>
+                    <div id="tab-info">
+                        <div id="unpaid-events">
+                            <h2>Unpaid Events</h2>
+                            <p>To complete registrations for these event complete the payment process.</p>
+                            <ul>
+                                 {% for b in unpaid_events %}
+                                     <li><b>{{ forloop.counter }}.</b> {{ b }}  &nbsp;</li>
+                                {% endfor %}
+
+                            </ul>
+                            <p><strong style="position: absolute; bottom:0;">Your total event fees is : {{ payble_amount }}</strong></p>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="margin-right: 220px;">Edit Events</button><button type="button" class="btn" data-toggle="modal" data-target="#payment">Complete Registration</button>
+                </div>
+                        <div id="paid-events">
+                            <h2>Paid Events</h2>
+                            <p>To complete registrations for these event complete the payment process.</p>
+                            <ul>
+                                  {% for x in paid_events %}
+                            <li><b>{{ forloop.counter }}.</b> {{ x }} &nbsp;</li>
+                                {% endfor %}
+
+                            </ul>
+
+                </div>
+                        <div id="notifications">
+                            <h2>You have no notifications.</h2>
+                </div>
+               </div>
+               <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+    <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit Events</h4>
+      </div>
+      <div class="modal-body">
+        <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+          <form method="post" action="removeEvents/">
                 {% csrf_token %}
                 <select name="events" multiple>
 
@@ -622,11 +702,40 @@
                 <br>
                 <input type="submit" value="Remove events">
             </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+               <div id="payment" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+    <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Events Payments</h4>
+      </div>
+      <div class="modal-body">
+        <p>Event payment portal will be active soon. You will be notified via email. Also check the profile page if your email is public.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            </div>
         </div>
     </div>
 
 
-    </div>
+
 </div>
 <div id="bottomimage"></div>
 </body>
@@ -636,6 +745,19 @@
     <script src="/static/aurora18/js/function.js"></script>
     <script src="https://use.fontawesome.com/d2e03493c3.js"></script>
 <script>
+    $('#unpaid-tab').click(function () {
+        $('#paid-events,#notifications').fadeOut();
+        $('#unpaid-events').fadeIn("slow");
+
+    });
+    $('#paid-tab').click(function () {
+        $('#unpaid-events,#notifications').fadeOut();
+        $('#paid-events').fadeIn("slow");
+    });
+    $('#notify').click(function () {
+        $('#paid-events,#unpaid-events').fadeOut();
+        $('#notifications').fadeIn("slow");
+    });
     function show() {
                   $('#removesection').css({
                   'display':'block'

@@ -753,20 +753,22 @@ $(document).ready(function () {
             'top': '30%'
         });
         $('#eventmenu').css({
-            'height': '300px',
+            'height': '500px',
             'display': 'grid',
+			'bottom':'-80%'
 
 
         });
         $('#openmenu').css({
-            'top': '2em'
-            , 'width': '50%', 'margin-right': '10%'
+            'width': '100%',
+		'text-align': 'center',
+		'top': '1em',
+		'margin-right': '0',
+			'font-size':'1.2em'
 
         });
 
-    $('.eventmenu').css({
-        'top': $(window).height()
-    });
+
     $('#eventmenu a').css({
         'font-size': '1.2em',
         'margin': '0',
@@ -1151,7 +1153,7 @@ $(document).ready(function () {
 		}
 		else{
 			$('#eventmenu').css({
-				'bottom':'-50%'
+				'bottom':'-80%'
 			});
 		}
         }

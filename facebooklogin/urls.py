@@ -18,4 +18,5 @@ urlpatterns = [
     path('Profile/',views.profile,name='profile'),
     path('Profile/removeEvents/',views.removeEvents),
 
+
 ]

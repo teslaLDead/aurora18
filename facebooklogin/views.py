@@ -46,6 +46,7 @@ def managerial_events_specific(request,eventName):
     return render(request,'facebooklogin/managerialEvents.html',{'event':eventName})
 
 
+
 @login_required
 def eventTeamView(request,eventName):
     s = eventName+";"
@@ -57,6 +58,8 @@ def eventTeamView(request,eventName):
     if s in user.eventsPending or s in user.eventsPaid:
         return redirect('/Profile/')
     else:
+        s=s.replace(';','')
+        s=s.replace('_',' ').title()
         event = Events.objects.get(name=eventName)
         if event.teamEvent is True:
             formsize = event.maxTeamSize

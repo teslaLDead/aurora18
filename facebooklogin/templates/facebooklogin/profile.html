@@ -87,9 +87,61 @@
             bottom: -10px;
             right: 0;
         }
+        #removeevents select{
+            width: 100%;
+        }
         #paid-events,#notifications{
             display:none;
         }
+        #nav-icon4 span{
+            background: black;
+        }
+        #below-section{
+            display: flex;height: 60%;
+        }
+        #unpaid-events strong{
+       }
+
+        @media screen and (max-width: 800px) and (min-width: 300px) {
+    .row{
+        height: 100%;
+        top: 0;
+        padding: 0.5em;
+    }
+    body{
+        background-image: none;
+    }
+    #top-info {
+        font-size: 0.6em;
+    }
+    #top-info img{
+        height: 100px;
+    }
+    #below-section
+    {
+        display: grid;
+    }
+    #tabs{
+        width: 100%;
+    }
+    #tabs ul{
+        display: flex;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    #tab-info{
+        width: 100%;
+    }
+    #unpaid-events strong{
+        position: relative;
+        bottom: inherit;
+    }
+    #tab-info button{
+        bottom: 0px;
+        right: 0px;
+
+    }
+}
     </style>
 </head>
 <body>
@@ -97,9 +149,9 @@
 <div id="sidenav">
     <!-- NAV BAR BUTTON -->
     <div id="nav-icon4" >
-  <span></span>
-  <span></span>
-  <span></span>
+  <span style="background: black;"></span>
+  <span style="background: black;"></span>
+  <span style="background: black;"></span>
 </div>
     <!-- NAV BAR BUTTON END-->
     <div id="mySidenav" class="sidenav">
@@ -630,7 +682,7 @@
 
 
                 </div>
-               <div style="display: flex;height: 60%;">
+               <div id="below-section" >
                    <div id="tabs">
                     <ul>
                         <li id="unpaid-tab">
@@ -653,15 +705,17 @@
                     <div id="tab-info">
                         <div id="unpaid-events">
                             <h2>Unpaid Events</h2>
-                            <p>To complete registrations for these event complete the payment process.</p>
+                            <p><strong>To complete registrations for these event complete the payment process</strong>.<br/> To <strong><a href="{% url 'event_menu' %}">add events</a></strong> click on <strong>register</strong> on the particular event page.</p>
+                         <p><strong >Your total event fees is : {{ payble_amount }}</strong></p>
                             <ul>
                                  {% for b in unpaid_events %}
                                      <li><b>{{ forloop.counter }}.</b> {{ b }}  &nbsp;</li>
                                 {% endfor %}
 
+
                             </ul>
-                            <p><strong style="position: absolute; bottom:0;">Your total event fees is : {{ payble_amount }}</strong></p>
-                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="margin-right: 220px;">Edit Events</button><button type="button" class="btn" data-toggle="modal" data-target="#payment">Complete Registration</button>
+
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal" style="margin-right: 220px;">Remove Events</button><button type="button" class="btn" data-toggle="modal" data-target="#payment">Complete Registration</button>
                 </div>
                         <div id="paid-events">
                             <h2>Paid Events</h2>
@@ -686,11 +740,12 @@
         <div class="modal-content">
         <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Edit Events</h4>
+        <h4 class="modal-title">Remove Events</h4>
       </div>
       <div class="modal-body">
+          <p>To remove events added to your profile <strong>(unpaid events)</strong> select and click remove events.</p>
         <p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
-          <form method="post" action="removeEvents/">
+          <form id="removeevents" method="post" action="removeEvents/">
                 {% csrf_token %}
                 <select name="events" multiple>
 

@@ -6,6 +6,7 @@
     <title>Event Addition Page</title>
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css"-->
@@ -21,22 +22,49 @@
         height: 100%;
     }
     body{
-        font-size: 1.2em;
-        padding: 2em;
-         background: deepskyblue;
-        background-image: url("/static/aurora18/img/city scape.png");
-        background-position: bottom ;
+
+
+        background-image: url("/static/aurora18/img/810.jpg");
+
 
         height: 100%;
-        background-repeat: no-repeat;
     }
     a{
         text-decoration: none;
     }
-    #tnc{
-        font-size: 0.8em;
+    .container{
+            height: 100%;
+        }
+        .row {
+	height: 80%;
+	position: absolute;
+	top: 10%;
 
+	width: 100%;
+	background: white;
+	padding: 3em;
+}
+    h1{
+        font-size: 3em;
+        font-weight: 600;
+        text-align: center;
     }
+    h2{
+        margin-top: 1.5em;
+    }
+#addbutton{
+    font-size: 1.5em;
+}
+@media screen and (max-width: 800px) and (min-width: 300px) {
+    .row{
+        height: 100%;
+        top: 0;
+        padding: 1em;
+    }
+    body{
+        background-image: none;
+    }
+}
 </style>
 <body>
 <!-- NAV BAR -->
@@ -667,10 +695,11 @@
 
 </div>
 <!-- NAV BAR END-->
-<h1>{{ eventName }}</h1>
-
-
-{% if formsize is not 0 %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{ eventName }}</h1>
+            {% if formsize is not 0 %}
 <h1>enter members</h1>
     <form id="teamform" method="GET" action="Update">
         <script>
@@ -682,24 +711,41 @@
         );
             };
     </script>
-        <p> This is an individual event.</p>
-    <p>To complete the registration for this event the fee will have to be paid online.</p>
-    <p>This event will be added to your profile. </p>
-    <p>You can complete the payment process afterwards from your profile.</p>
-        <p>You can also manage your events from your profile.</p>
+        <ul>
+            <li><p> This is an individual event.</p></li>
+            <li><p>To complete the registration for this event the fee will have to be paid online.</p></li>
+            <li><p>This event will be added to your profile. </p></li>
+            <li><p>You can complete the payment process afterwards from your profile.</p></li>
+            <li><p>You can also manage your events from your profile.</p></li>
+        </ul>
+
+
+
+
+
     <input type="submit" value="Submit">
     </form>
 {% else %}
-    <p> This is an individual event.</p>
-    <p>To complete the registration for this event the fee will have to be paid online.</p>
-    <p>This event will be added to your profile. </p>
-    <p>You can complete the payment process afterwards from your profile.</p>
-    <p>You can also manage your events from your profile.</p>
+                <h2>Please note</h2>
+    <ul>
+            <li><p> This is an individual event.</p></li>
+        <li><p>To <storng>complete the registration</storng> for this event the <strong>fee will have to be paid online.</strong></p></li>
+            <li><p>This event will be added to your profile. </p></li>
+            <li><p>You can complete the payment process <strong>afterwards</strong>, from your profile.</p></li>
+            <li><p>You can also manage your events from your profile. Paid events will be shown in the paid events tab.</p></li>
+        </ul>
 
-    <a href="Update">Proceed Registration</a>
+    <a href="Update" id="addbutton">Add To Profile</a>
     <br/>
     <a href="#" id="tnc">*View terms and conditions</a>
 {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+
 
 
 </body>

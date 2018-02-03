@@ -5,8 +5,11 @@ from django.conf import settings
 from .forms import UserForm
 from .models import *
 from social_django.models import UserSocialAuth
+from instamojo_wrapper import Instamojo
 # Create your views here.
 
+api = Instamojo(api_key="test_d86c3beebab0094e75fd6b4c66e",
+                auth_token="test_03cce85d223a32210f82679067c",endpoint='https://test.instamojo.com/api/1.1/')
 
 def indexView(request):
     reg="Register"
@@ -152,3 +155,47 @@ def createprofile(request):
     else:
         form=UserForm()
     return render(request,'facebooklogin/createuser.html',{'form':form})
+
+@login_required
+def payment(request):
+    try:
+        user=UserProfile.objects.get(user=request.user)
+    except UserProfile.DoesNotExist:
+        return redirect('/CreateProfile/')
+    amount=user.unpaidAmount
+    phone=user.phonenumber
+    purpose="user:"+request.user.first_name
+    email=request.user.email
+    response = api.payment_request_create(
+        amount=amount,
+        purpose=purpose,
+        send_email=False,
+        email=email,
+        phone=str(phone),
+        send_sms=False,
+        allow_repeated_payments=False,
+        redirect_url="http://localhost:8000/payment_made/",
+
+    )
+    new_payment=PaymentInitiated(payment_id=response['payment_request']['id'],user_name=(str(request.user.first_name)+" "+str(request.user.last_name)),user_email=request.user.email,user_phone=str(user.phonenumber),amount=str(amount),events=user.eventsPending,created_at=str(response['payment_request']['created_at']))
+    new_payment.save()
+
+    return redirect(response['payment_request']['longurl'])
+
+@login_required
+def payment_made(request):
+    user = UserProfile.objects.get(user=request.user)
+    payment=PaymentInitiated.objects.filter(user_name=(str(request.user.first_name)+" "+str(request.user.last_name)),events=user.eventsPending)
+    id=(payment[0].payment_id)
+    status = api.payment_request_status(id)
+    current_status=status['payment_request']['status']
+    if (current_status=="Completed"):
+        new_payment=PaymentMade(user=user,events=payment[0].events,amount=payment[0].amount,payment_id=payment[0].payment_id)
+        new_payment.save()
+        user.eventsPaid=user.eventsPending
+        user.eventsPending=""
+        user.totalPaid=payment[0].amount
+        user.unpaidAmount=0
+        user.save()
+
+    return redirect('profile')

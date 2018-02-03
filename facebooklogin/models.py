@@ -48,3 +48,22 @@ class Events(models.Model):
         s=self.eventType+"_"+self.name+";"
         return s
 
+class PaymentInitiated(models.Model):
+    payment_id=models.CharField(max_length=500)
+    user_name=models.CharField(max_length=500)
+    user_email=models.CharField(max_length=500)
+    user_phone = models.CharField(max_length=500)
+    amount=models.IntegerField()
+    events=models.CharField(max_length=600)
+    created_at=models.CharField(max_length=500)
+    def __str__(self):
+        return self.user_name
+
+class PaymentMade(models.Model):
+    user=models.ForeignKey(UserProfile, on_delete=models.CASCADE,blank=True)
+    events=models.CharField(max_length=1000,blank=True)
+    amount=models.IntegerField(blank=True)
+    payment_id=models.CharField(max_length=500,blank=True)
+
+    def __str__(self):
+        return str(self.user)+" "+str(self.amount)

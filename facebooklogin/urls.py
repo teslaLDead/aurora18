@@ -17,6 +17,9 @@ urlpatterns = [
     path('CreateProfile/', views.createprofile),
     path('Profile/',views.profile,name='profile'),
     path('Profile/removeEvents/',views.removeEvents),
+    path('payment/',views.payment,name='payment'),
+    path('payment_made/',views.payment_made,name='payment_made'),
+
 
 
 ]

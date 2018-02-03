@@ -192,9 +192,9 @@ def payment_made(request):
     if (current_status=="Completed"):
         new_payment=PaymentMade(user=user,events=payment[0].events,amount=payment[0].amount,payment_id=payment[0].payment_id)
         new_payment.save()
-        user.eventsPaid=user.eventsPending
+        user.eventsPaid=user.eventsPaid+user.eventsPending
         user.eventsPending=""
-        user.totalPaid=payment[0].amount
+        user.totalPaid=user.totalPaid+payment[0].amount
         user.unpaidAmount=0
         user.save()
 

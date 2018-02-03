@@ -174,7 +174,7 @@ def payment(request):
         phone=str(phone),
         send_sms=False,
         allow_repeated_payments=False,
-        redirect_url="http://localhost:8000/payment_made/",
+        redirect_url="http://aurora18.com/payment_made/",
 
     )
     new_payment=PaymentInitiated(payment_id=response['payment_request']['id'],user_name=(str(request.user.first_name)+" "+str(request.user.last_name)),user_email=request.user.email,user_phone=str(user.phonenumber),amount=str(amount),events=user.eventsPending,created_at=str(response['payment_request']['created_at']))

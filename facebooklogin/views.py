@@ -8,8 +8,8 @@ from social_django.models import UserSocialAuth
 from instamojo_wrapper import Instamojo
 # Create your views here.
 
-api = Instamojo(api_key="test_d86c3beebab0094e75fd6b4c66e",
-                auth_token="test_03cce85d223a32210f82679067c",endpoint='https://test.instamojo.com/api/1.1/')
+api = Instamojo(api_key="8d23e1ebcd31b04e0e7e72aae28e2fec",
+                auth_token="3597e5d20557a0f8eb2a7a15bcda3e31")
 
 def indexView(request):
     reg="Register"

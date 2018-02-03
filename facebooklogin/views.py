@@ -163,6 +163,8 @@ def payment(request):
     except UserProfile.DoesNotExist:
         return redirect('/CreateProfile/')
     amount=user.unpaidAmount
+    if (amount<=0):
+        return redirect('/Profile/')
     phone=user.phonenumber
     purpose="user:"+request.user.first_name
     email=request.user.email

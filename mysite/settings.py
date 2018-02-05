@@ -25,7 +25,7 @@ SECRET_KEY = '7&zyt1iaugs@d8j76t&42fkg^a)ixyu(k&pd!u72vpk@p9wvqd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.aurora18.com','aurora18.com','13.126.193.50','tesla-paritosh-god','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['www.aurora18.com','aurora18.com','13.126.193.50','13.126.249.25','tesla-paritosh-god','localhost','127.0.0.1']
 
 
 # Application definition

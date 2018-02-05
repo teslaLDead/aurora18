@@ -17,7 +17,7 @@ class UserProfile(models.Model):
     unpaidAmount=models.IntegerField(default=0,blank=True)
     teamNames=models.TextField(blank=True)
     def __str__(self):
-        return self.user.email
+        return str(self.user)+" "+self.college_name
     def addNewEvent(self,new_event):
         currentEvents=self.eventsPending
         self.eventsPending=currentEvents+new_event

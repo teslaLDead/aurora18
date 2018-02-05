@@ -192,14 +192,14 @@ def payment_made(request):
 	id=(x.payment_id)
     	status = api.payment_request_status(id)
     	current_status=status['payment_request']['status']
-    	if (current_status=="Completed"):
-        	new_payment=PaymentMade(user=user,events=x.events,amount=x.amount,payment_id=x.payment_id)
-        	new_payment.save()
-        	user.eventsPaid=user.eventsPaid+user.eventsPending
-        	user.eventsPending=""
-        	user.totalPaid=user.totalPaid+x.amount
-        	user.unpaidAmount=0
-        	user.save()
-		break
+        if (current_status=="Completed"):
+            new_payment=PaymentMade(user=user,events=x.events,amount=x.amount,payment_id=x.payment_id)
+            new_payment.save()
+            user.eventsPaid=user.eventsPaid+user.eventsPending
+            user.eventsPending=""
+            user.totalPaid=user.totalPaid+x.amount
+            user.unpaidAmount=0
+            user.save()
+            break
 
     return redirect('profile')

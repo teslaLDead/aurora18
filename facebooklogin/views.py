@@ -189,9 +189,9 @@ def payment_made(request):
     user = UserProfile.objects.get(user=request.user)
     payment=PaymentInitiated.objects.filter(user_name=(str(request.user.first_name)+" "+str(request.user.last_name)),events=user.eventsPending)
     for x in payment:
-	id=(x.payment_id)
-    	status = api.payment_request_status(id)
-    	current_status=status['payment_request']['status']
+        id = (x.payment_id)
+        status = api.payment_request_status(id)
+        current_status=status['payment_request']['status']
         if (current_status=="Completed"):
             new_payment=PaymentMade(user=user,events=x.events,amount=x.amount,payment_id=x.payment_id)
             new_payment.save()
@@ -200,6 +200,5 @@ def payment_made(request):
             user.totalPaid=user.totalPaid+x.amount
             user.unpaidAmount=0
             user.save()
-            break
 
     return redirect('profile')

@@ -19,8 +19,8 @@ $(window).scroll(function(){
     'transform':'scale()'
   });
 
-  if(wScroll>1500){
-      $('#topbackground').fadeOut(1000);
+  if(wScroll>500){
+      $('#topbackground').fadeOut(800);
   }
   else{
 

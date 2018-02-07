@@ -323,7 +323,7 @@ li{
     color: white;
 }
 
-@media only screen and (max-device-width: 800px ) and (min-device-width: 300px){
+@media only screen and (max-device-width: 1200px ) and (min-device-width: 300px){
 	.row {
 	margin: 16em 0px 5em 0px;
 
@@ -346,4 +346,8 @@ li{
 		margin-right: 0;
 
 	}
+	.pt-perspective{
+		height: 4000px;
+	}
 }
+

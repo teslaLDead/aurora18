@@ -96,7 +96,6 @@ def updateUserEvents(request,eventname):
     message=""
     if s in user.eventsPaid:
         message="You have completed the registration process for this event."
-
         return redirect('/Profile/')
     elif s in user.eventsPending:
         message="Registration incomplete please check profile to complete registration."

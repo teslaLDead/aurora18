@@ -324,8 +324,11 @@ li{
 }
 
 @media only screen and (max-device-width: 1200px ) and (min-device-width: 300px){
+	#eventmenu{
+		bottom: -95%;
+	}
 	.row {
-	margin: 16em 0px 5em 0px;
+	margin: 10em 0px 5em 0px;
 
 }
 	h2 {

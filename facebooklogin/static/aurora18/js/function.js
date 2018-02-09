@@ -7,72 +7,72 @@ $(window).scroll(function(){
   var wScroll=$(this).scrollTop();
     console.log(wScroll);
     $('#home-scroll-down').css({'opacity':0});
-    if(wScroll>=5000){
+    if(wScroll>=1500){
 
             $('#text > p:nth-child(1)').css({'opacity':1});
         }
-        if(wScroll>=5500){
+        if(wScroll>=1700){
 
             $('#text > p:nth-child(2)').css({'opacity':1});
         }
-        if(wScroll>=6000){
+        if(wScroll>=1900){
 
             $('#text > p:nth-child(3)').css({'opacity':1});
         }
-        if(wScroll>=6500){
+        if(wScroll>=2100){
 
             $('#text > p:nth-child(4)').css({'opacity':1});
         }
-        if(wScroll>=7000){
+        if(wScroll>=2300){
 
             $('#text > p:nth-child(5)').css({'opacity':1});
         }
-        if(wScroll>=7500){
+        if(wScroll>=2500){
 
             $('#text > p:nth-child(6)').css({'opacity':1});
         }
-        if(wScroll>=8000){
+        if(wScroll>=2700){
 
             $('#text > p:nth-child(7)').css({'opacity':1});
         }
-        if(wScroll>=10000){
+        if(wScroll>=3200){
 
             $('#textLast > p:nth-child(1)').css({'opacity':1});
         }
-        if(wScroll>=10500){
+        if(wScroll>=3400){
 
             $('#textLast > p:nth-child(2)').css({'opacity':1});
         }
-        if(wScroll>=11000){
+        if(wScroll>=3600){
 
             $('#textLast > p:nth-child(3)').css({'opacity':1});
         }
-        if(wScroll>=11500){
+        if(wScroll>=3800){
 
             $('#textLast > p:nth-child(4)').css({'opacity':1});
         }
-        if(wScroll>=12000){
+        if(wScroll>=3800){
 
             $('#textLast > p:nth-child(5)').css({'opacity':1});
         }
-        if(wScroll>=12500){
+        if(wScroll>=4000){
 
             $('#textLast > p:nth-child(6)').css({'opacity':1});
         }
-        if(wScroll>=13000){
+        if(wScroll>=4200){
 
             $('#textLast > p:nth-child(7)').css({'opacity':1});
         }
 
 
-    if (wScroll<=5000){
+    if (wScroll<=1300){
              $('#maintitle').css({
-       'top':530-(wScroll/15)+'px',
+       'top':530-(wScroll/5)+'px',
         'transform':' scale('+(1+wScroll/20000) +') ',
-        'opacity':wScroll/5000
+        'opacity':wScroll/2000
     });
     $('#background').css({
-    'transform':'translate(0px, '+ (wScroll/1.005) +'px) scale('+(1+wScroll/80000) +')'
+    'transform':' scale('+(1+wScroll/10000) +')'
   });
   $('#mountain0').css({
     'transform':' scale('+(1+wScroll/150000) +')'
@@ -87,7 +87,7 @@ $(window).scroll(function(){
   });
 
     }
-    if (wScroll<=4000){
+    if (wScroll<=1300){
         $('#logo').css({
             'opacity':1
         });
@@ -102,7 +102,7 @@ $(window).scroll(function(){
         });
 
     }
-    else if (wScroll>4000 && wScroll<9000){
+    else if (wScroll>1300 && wScroll<2800){
         $('#logo').css({
             'opacity':0
         });
@@ -115,17 +115,17 @@ $(window).scroll(function(){
         $('#scene3').css({
             'opacity':0
         });
-        var temp=wScroll-4000;
+        var temp=wScroll-1300;
         $('#manImage').css({
-    'transform':'scale('+(0.8+temp/60000) +') '
+    'transform':'scale('+(0.8+temp/10000) +') '
   });
 
 
         $('#manShadow').css({
-    'transform':'scale('+(0.8+temp/160000) +') '
+    'transform':'scale('+(0.8+temp/14000) +') '
   });
     }
-    else if (wScroll>9000 && wScroll<13000){
+    else if (wScroll>2900 && wScroll<13000){
         $('#logo').css({
             'opacity':0
         });
@@ -138,7 +138,7 @@ $(window).scroll(function(){
         $('#scene3').css({
             'opacity':1
         });
-        var temp=wScroll-9000;
+        var temp=wScroll-2900;
     $('#solarsystem').css({
     'transform':'scale('+(1+temp/160000) +') '
   });
@@ -146,10 +146,10 @@ $(window).scroll(function(){
     'transform':'scale('+(1+temp/40000) +') '
   });
     $('#spaceman').css({
-    'transform':'scale('+(0.6+temp/20000) +') rotate('+temp/1000+'deg)'
+    'transform':'scale('+(0.6+temp/5000) +') rotate('+temp/100+'deg)'
   });
     $('#spacemanoutline').css({
-    'transform':'scale('+(0.6+temp/30000) +') rotate('+temp/1000+'deg) '
+    'transform':'scale('+(0.6+temp/8000) +') rotate('+temp/150+'deg) '
   });
     }
 

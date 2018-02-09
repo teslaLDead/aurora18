@@ -655,7 +655,7 @@
       </span><span>GALLERY</span></a>
         <div id="help">
             <span><a href="https://www.facebook.com/auroraiiitm/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
-            <span><a href="https://www.facebook.com/auroraiiitm/videos/1508292579282663/" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
+            <span><a href="https://www.youtube.com/channel/UCQmbFlStfjsCRkaBvy_jPMg" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
             <span><a href="mailto:aurora2k18.iiitm@gmail.com?subject=I%20Need%20Help"><i class="fa fa-question" aria-hidden="true"></i></a></span>
         </div>
     </div>
@@ -1094,6 +1094,7 @@
 	</body>
 <script>
     $(document).ready(function () {
+         $('#page1').addClass('pt-page-current');
         var event="{{ event }}";
         switch (event){
             case "big_discussion":
@@ -1112,7 +1113,33 @@
                 $('#page1').removeClass('pt-page-current');
                 $('#page4').addClass('pt-page-current');
                 break;
-        }
+        };
+        $('#nextIterrateEffect').click(function () {
+            var currPageId=$('.pt-page-current').attr('id');
+            currPageId="#"+currPageId;
+            var s=$('.pt-page-current').attr('id').slice(-1);
+            var q=parseInt(s)+1;
+            if(q>4){
+                q=1;
+            }
+            var nextPageId="#page"+q.toString();
+            $(currPageId).removeClass('pt-page-current');
+            $(nextPageId).addClass('pt-page-current');
+
+        });
+        $('#prevIterrateEffect').click(function () {
+            var currPageId=$('.pt-page-current').attr('id');
+            currPageId="#"+currPageId;
+            var s=$('.pt-page-current').attr('id').slice(-1);
+            var q=parseInt(s)-1;
+            if(q<1){
+                q=4;
+            }
+            var nextPageId="#page"+q.toString();
+            console.log(nextPageId);
+            $(currPageId).removeClass('pt-page-current');
+            $(nextPageId).addClass('pt-page-current');
+        });
     });
     $('#registerButton,#registerButton2').click(function () {
         var page=$('.pt-page-current').attr('id');

@@ -1,7 +1,62 @@
+    html,body{
+        overflow: hidden;
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
 
-        body{
-            height: 2000px;
+        .back-images div {
+        transition: all 1s;
         }
+        #info-img{
+         background-image: url("../img/hippie wagon-01.jpg");
+            background-size: cover;
+        }
+        #tech-img {
+            background-image: url("../img/tech.jpeg");
+            background-size: cover;
+            opacity: 0;
+            background-color: linear-gradient(90deg, #0000, #000c);
+        }
+        #mang-img {
+            background-image: url("../img/mang.png");
+            background-size: cover;
+            opacity: 0;
+        }
+        #cult-img {
+            background-image: url("../img/cult.jpg");
+            background-size: cover;
+            opacity: 0;
+        }
+            .tab-icons {
+            height: 50px;
+                width:50px;
+                margin: 20px 0 20px 0;
+            }
+            .tab-icons svg {
+            fill: white;
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                transition: all 0.5s;
+                opacity: 0;
+
+            }
+            .tab-icons svg:hover {
+            width: 60px;
+                height: 60px;
+            }
+            #tab-nav {
+            position: absolute;
+                display: grid;
+                top: 50%;
+                margin-top: -135px;
+                margin-left: 1.5em;
+                z-index: 100;
+            }
         #mainBack{
             height: 100%;
             position: fixed;
@@ -9,6 +64,17 @@
             display: flex;
 
             transition: all 0.5s;
+        }
+        .inner-content {
+
+        
+           color: white;
+            font-size: 1.2em;
+
+        }
+         {
+
+
         }
         .container-div{
             height:100%;
@@ -24,43 +90,110 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #left-side{
+            display: grid; height: 100%;background: linear-gradient(-90deg, #0000, #0000004d);
+        }
+        .inner-content{
 
+      height: 90%;
+        margin: 3em 1em 0em 0em;
+
+        text-align: center;
+        padding-top: 5em;
+
+    }
+        .row h1{
+        margin: 0em 0 0em 0em;
+        font-size: 10em;
+        position: absolute;
+       font-family: 'Monoton', cursive;
+        bottom: 50px;
+        line-height: 100px;
+        transition: all 0.5s;
+        color:#ffffff80;
+    }
+        .content{
+        position: absolute;
+        width: 100%;
+    }
+        .quotes p{
+        font-size: 3.2em;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 20%;
+        font-family: 'Satisfy', cursive;
+        left: 10%;
+    }
+        #mobile-view{
+            display: none;
+            text-decoration: none;
+
+        }
+        #mobile-view span{
+            font-family: 'Satisfy', cursive;
+
+        }
+    .quotes p span{
+        margin-left: 50px;
+    }
        @media only screen and (max-device-width: 800px ) and (min-device-width: 300px) {
-           #technical,#managerial,#cultural{
-               -moz-background-size: contain;
-           }
-	    #technical {
-		background-image: url("../img/mobile-technical.png");
-	    }
-            #cultural{
-               background-image: url("../img/mobile-cultural.png");
-           }
-            #managerial{
-                background-image: url("../img/mobile-managerial.png");
-            }
-            .eventclick{
-                right: 0px;
-            }
+        body,html{
+            overflow: visible;
         }
-        @media screen and (min-width: 1024px) {
-	    #technical {
-		background-image: url("../img/rocketart-med.png");
-	    }
-            #cultural{
-               background-image: url("../img/cultural-med.png");
-           }
-            #managerial{
-                background-image: url("../img/managerial-med.png");
-            }
+           *{
+            font-size: 1em;
         }
-        @media screen and (min-width: 1920px) {
-	    #technical {
-		background-image: url("../img/rocketart.png");
-	    }
-            #cultural{
-               background-image: url("../img/cultural-high.png");
+           .container{
+               overflow: visible;
            }
-            #managerial{
-               background-image: url("../img/managerial.png");
+           .content{
+               position: relative;
            }
+           #left-side{
+            display: none;
+            font-size: 0.5em;
         }
+           .inner-content{
+               margin: 0em;
+               font-size: 0.8em;
+           }
+           #tab-nav{
+               display: none;
+           }
+           #home-scroll-down{
+               display: none;
+           }
+           .row h1{
+               display: none;
+           }
+           .quotes p{
+               display: none;
+           }
+           #tech-img,#mang-img,#cult-img{
+               display: none;
+           }
+           #tech,#cult,#mang{
+               display: none;
+           }
+           #info{
+               height: 100%;
+           }
+           #info h3,h2{
+               display: none;
+           }
+           #mobile-view{
+               display: grid;
+               height: 100%;
+
+           }
+
+           #mobile-view a{
+
+               font-size: 2.5em;
+               color: white;
+           }
+
+        }
+
+

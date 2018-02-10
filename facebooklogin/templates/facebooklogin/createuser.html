@@ -3,6 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Aurora 2018, register user, Aurora 18, aurora 18, ABV-IIITM Gwalior Techno cultural fest in February, Gwalior">
+    <meta name="keyword" content="cultural, technical, managerial, fest, concert, college fest, abv iiitm gwalior, iiit, gwalior, iiitm, 40 plus events, competitions, college, gwalior, events, footfall, movie, pro nights, madhya pradesh, india, sponsor">
+    <meta name="robots" content=" follow">
+    <meta name="author" content="Paritosh Kumar, kumar.paritosh20@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create User Aurora-18</title>
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/style.css">
     <link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
@@ -16,17 +21,81 @@
     <link rel="stylesheet" type="text/css" href="/static/aurora18/css/home.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <style>
-        .container-fluid{
-            margin-top: 5em;
+        html,body{
+            height: 100%;
+        }
+        .container{
+
+            height: 100%;
+            padding: 0 5em 0 5em;
 
         }
-        body{
-            font-size: 1.5em;
-        }
-
-        .col-12{
-            justify-content: center;
+        .row{
+            height: 70%;
+            position: relative;
+            width: 100%;
+            top: 50%;
+            margin: -30% 0em 0em 0em;
+            background: white;
+            padding: 2em;
             text-align: center;
+
+        }
+
+        body{
+            font-size: 1.5em;background-image: url("/static/aurora18/img/810.jpg");
+
+        }
+        form p{
+            text-align: left;
+        }
+        form p label{
+            text-align: left;
+            position: relative;
+            left:2em;
+        }
+        form p input{
+            text-align: center;
+            position: absolute;
+            right:6em;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+        .row h2{
+            width: 100%;
+            text-align: center;
+        }
+        @media screen and (min-height: 1080px){
+            .row{
+                margin: -40% 0em 0em 0em;
+            }
+        }
+        @media screen and (max-width: 1000px) and (min-width: 300px) {
+            .container{
+                padding: 0;
+            }
+            .row h2{
+                font-size: 1em;
+            }
+            .row{
+                padding: 1em;
+                height: 100%;
+                top: 0%;
+                margin: 0%;
+            }
+            form p label{
+                position: relative;
+                left: 0;
+
+            }
+            form p input{
+                position: relative;
+                right: 0;
+            }
         }
     </style>
 </head>
@@ -659,21 +728,18 @@
 
 </div>
 <!-- NAV BAR END-->
-<div class="container-fluid">
+<div class="container">
+
     <div class="row">
-        <div class="col-12">
-            <h2>Please add details to complete profile</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
+         <h2>Add Details To Complete Profile</h2>
+        <div class="col-md-12 col-lg-12">
             <form method="POST" >
         {% csrf_token %}
         <label>Name : {{ request.user.first_name }} {{ request.user.last_name }}</label><br/>
         <label>Registered Email : {{ request.user.email }}</label><br/>
         {{ form.as_p }}
                 <span id="spnPhoneStatus"></span><br/>
-        <input type="submit" name="ok">
+        <input type="submit" name="ok" value="Create Profile" class="btn btn-primary">
     </form>
         </div>
     </div>
@@ -685,6 +751,53 @@
     <script src="https://use.fontawesome.com/d2e03493c3.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+       function validateAadhar() {
+            var filter1=/^\d{12}$/;
+
+                var s=$('#id_aadharNumber').val();
+                console.log(s);
+                if(filter1.test(s)){
+                    console.log('good to go');
+                   return true;
+
+                }
+                else{
+
+                    alert("Please Enter A Valid Aadhar Number");
+                    return false;
+
+                }
+       }
+        $(document).ready(function () {
+             $("form").submit(function(e){
+
+       if(!validateAadhar())
+               e.preventDefault();
+    });
+           $('#id_phonenumber').blur(function(e) {
+
+
+   if (validatePhone('id_phonenumber')) {
+
+       $('#spnPhoneStatus').html('');
+
+       $('#spnPhoneStatus').css('color', 'green');
+
+
+   }
+
+   else {
+
+      $('#spnPhoneStatus').html('Please enter a valid mobile number');
+
+      $('#spnPhoneStatus').css('color', 'red');
+
+   }
+
+});
+
+
+        });
   $( function() {
     $( "#id_dob" ).datepicker({
       changeMonth: true,
@@ -711,25 +824,7 @@
     }
 
 };
-        $('#id_phonenumber').blur(function(e) {
 
-   if (validatePhone('id_phonenumber')) {
-
-       $('#spnPhoneStatus').html('');
-
-       $('#spnPhoneStatus').css('color', 'green');
-
-   }
-
-   else {
-
-      $('#spnPhoneStatus').html('Please enter a indian valid phone number');
-
-      $('#spnPhoneStatus').css('color', 'red');
-
-   }
-
-});
 
 
   </script>

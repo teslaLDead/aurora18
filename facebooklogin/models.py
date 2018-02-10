@@ -11,6 +11,7 @@ class UserProfile(models.Model):
     college_name=models.CharField(max_length=200)
     phonenumber=models.IntegerField()
     dob=models.DateField()
+    aadharNumber=models.CharField(blank=True,default="",max_length=12)
     eventsPaid=models.CharField(max_length=400,blank=True)
     eventsPending=models.CharField(max_length=400,blank=True)
     totalPaid=models.IntegerField(default=0,blank=True)

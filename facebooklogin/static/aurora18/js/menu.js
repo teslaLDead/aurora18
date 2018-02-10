@@ -1,5 +1,10 @@
  var count=0;
+var animate=false;
+
     $(document).mousewheel(function (e, delta) {
+        if($('#info,#tech,#cult,#mang').is(':animated'))
+            return false;
+
         $('.scroll-down.svg svg ').css({
             'width':'25px',
             'opacity':'0.5',
@@ -22,8 +27,9 @@
         }
         switch (count){
             case 0:
-                $('#mang,#cult,#tech').fadeOut("fast");
-                 $('#info').fadeIn("fast");
+
+                $('#mang,#cult,#tech').fadeOut("slow");
+                 $('#info').fadeIn("slow");
                  $('#tech-img,#mang-img,#cult-img').css({
                      'opacity':0
                  });
@@ -36,10 +42,12 @@
                  });
 
 
+
             break;
             case 1:
-                 $('#mang,#cult,#info').fadeOut("fast");
-                 $('#tech').fadeIn("fast");
+                 animate=true;
+                 $('#mang,#cult,#info').fadeOut("slow");
+                 $('#tech').fadeIn("slow");
                  $('#info-img,#mang-img,#cult-img').css({
                      'opacity':0
                  });
@@ -61,11 +69,13 @@
                  /*$('#tab-nav').css({
                      'margin-top':'-35px'
                  });*/
+                 animate=false;
 
             break;
             case 2:
-                $('#mang,#tech,#info').fadeOut("fast");
-            $('#cult').fadeIn("fast");
+                 animate=true;
+                $('#mang,#tech,#info').fadeOut("slow");
+            $('#cult').fadeIn("slow");
             $('#info-img,#mang-img,#tech-img').css({
                      'opacity':0
                  });
@@ -85,10 +95,12 @@
                  /*$('#tab-nav').css({
                      'margin-top':'-125px'
                  });*/
+                animate=false;
             break;
             case 3:
-                $('#tech,#cult,#info').fadeOut("fast");
-            $('#mang').fadeIn("fast");
+                 animate=true;
+                $('#tech,#cult,#info').fadeOut("slow");
+            $('#mang').fadeIn("slow");
             $('#info-img,#cult-img,#tech-img').css({
                      'opacity':0
                  });
@@ -108,6 +120,7 @@
                  /*$('#tab-nav').css({
                      'margin-top':'-215px'
                  });*/
+                 animate=false;
             break;
 
         }

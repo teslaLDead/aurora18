@@ -15,6 +15,7 @@ class UserProfile(models.Model):
     eventsPaid=models.CharField(max_length=400,blank=True)
     eventsPending=models.CharField(max_length=400,blank=True)
     totalPaid=models.IntegerField(default=0,blank=True)
+    roll_number=models.CharField(default="",blank=True,max_length=100)
     unpaidAmount=models.IntegerField(default=0,blank=True)
     teamNames=models.TextField(blank=True)
     def __str__(self):

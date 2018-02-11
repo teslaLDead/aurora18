@@ -18,6 +18,7 @@ var animate=false;
         });
 
         if(delta>0){
+
             if(count>0)
                 count--;
         }

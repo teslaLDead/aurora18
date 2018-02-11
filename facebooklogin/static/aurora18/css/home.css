@@ -179,6 +179,12 @@
 }
 body{
     overflow:hidden;
+
+}
+.container{
+     background-image: url("../img/homepage.jpg");
+    background-size: cover;
+    width: 100%;
 }
 #preloader {
   position: fixed;

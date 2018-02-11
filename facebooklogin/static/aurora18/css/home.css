@@ -184,6 +184,7 @@ body{
 .container{
      background-image: url("../img/homepage.jpg");
     background-size: cover;
+    background-position: center;
     width: 100%;
 }
 #preloader {
